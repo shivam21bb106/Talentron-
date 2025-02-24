@@ -1,0 +1,136 @@
+.formcontainer1711 {
+    margin: 20px auto;
+    max-width: 700px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  .job-box {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .seek {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #454545;
+    border: 1px solid #868686;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .seek img {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+  }
+  
+  .seek:hover {
+    background-color: #fff;
+    color: #007bff;
+  }
+  
+  .seek[style="background-color: white;"] {
+    background-color: white !important;
+    color: #000;
+  }
+  
+  .job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  }
+  
+  .job-form div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .job-form label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+  }
+  
+  .job-form input,
+  .job-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .job-form input:focus,
+  .job-form select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .job-form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .job-form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 14px;
+  }
+  
+  .success-message {
+    color: green;
+    text-align: center;
+  }
+  .job-form-header {
+    border: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 30px;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0 2px 4px #0000001a;
+  }
+  .job-form1{
+    border: 1px solid #ddd;
+      display: flex
+  ;
+      flex-direction: column;
+      width: 100%;
+      padding: 30px;
+      border-radius: 8px;
+      background-color: #fff;
+      text-align: center;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .job-form1 h2{
+    margin-bottom: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color:#333;
+  }
+  
