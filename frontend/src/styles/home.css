@@ -43,19 +43,29 @@
   right: 30px;
   color: white;
 }
-
-@media (max-width: 1900px) {
+@media (max-width: 1980px) {
   .left-arrow {
-    left: 100px;
+    left: 200px;
     color: white;
   }
   
   .right-arrow {
-    right: 100px;
+    right: 200px;
     color: white;
   }
 }
-@media (max-width: 1640px) {
+@media (max-width: 1900px) {
+  .left-arrow {
+    left: 160px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 160px;
+    color: white;
+  }
+}
+@media (max-width: 1714px) {
   .left-arrow {
     left: 70px;
     color: white;
@@ -667,8 +677,8 @@
 .custom-shape::after {
   content: "";
   position: absolute;
-  top: -1.5px;
-  right: -24px;
+  top: -1px;
+  right: -25px;
   width: 0;
   height: 0;
   border-style: solid;

@@ -99,12 +99,12 @@ const Footer = () => {
         </li>
         <li>
           <button onClick={goToTrainingPrograms} className="nav-link text-white footer-text pb-3">
-            Training Programs
+            Training Program
           </button>
         </li>
         <li>
           <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3">
-            Training Partners
+            Training Partner
           </button>
         </li>
         <li>

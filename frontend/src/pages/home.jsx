@@ -15,7 +15,7 @@ const slides = [
           <h1 className="fw-bold title-text">Hi Candidate!</h1>
           <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
           <p className="title-subtext d-none d-lg-block">
-            Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+          Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
           </p>
           <button className="btn btn-primary job-seeker-button">Job Seeker</button>
         </div>
@@ -47,7 +47,7 @@ const slides = [
         <h1 className="fw-bold title-text">Hi Candidate!</h1>
         <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
         <p className="title-subtext d-none d-lg-block">
-        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+        Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
         </p>
         <button className="btn btn-primary job-seeker-button">Job Seeker</button>
       </div>
@@ -63,7 +63,7 @@ const slides = [
         <h1 className="fw-bold title-text">Hi Candidate!</h1>
         <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
         <p className="title-subtext d-none d-lg-block">
-        Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+        Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
         </p>
         <button className="btn btn-primary job-seeker-button">Job Seeker</button>
       </div>

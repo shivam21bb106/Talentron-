@@ -135,22 +135,22 @@ const TrainingProgramPage = () => {
           </p>
           <ul className="list-unstyled">
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> You'll be ready to enter the job market.
+              <img src="/images/white-tick.png" /> You'll be ready to enter the job market.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> Opportunities for networking.
+              <img src="/images/white-tick.png" /> Opportunities for networking.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> Internships with dynamic tech startups.
+              <img src="/images/white-tick.png" /> Internships with dynamic tech startups.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> Gain practical experience.
+              <img src="/images/white-tick.png" /> Gain practical experience.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> Tackle complex coding issues
+              <img src="/images/white-tick.png" /> Tackle complex coding issues
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/about_us_img/white-tick.png" /> Collaborate with seasoned developers.
+              <img src="/images/white-tick.png" /> Collaborate with seasoned developers.
             </li>
           </ul>
           <p className="portfolio-context">
