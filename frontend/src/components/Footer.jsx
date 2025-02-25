@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="col-md-4 text-center text-md-start">
               <h4 className="fw-bold">
                 <img
-                  src="public/images\Rectangle 2.png"
+                  src="/images\Rectangle 2.png"
                   alt="square_color"
                   className="img-fluid me-1"
                 />Talentron
@@ -63,7 +63,7 @@ const Footer = () => {
               </p>
               <p className="footer-tele-email">
               <img
-                  src="public/images/location.png"
+                  src="/images/location.png"
                   alt="location"
                   className="img-fluid ms-1 me-2"
                 />
@@ -71,13 +71,13 @@ const Footer = () => {
                 <span className="indent">S.P.Plot, No. 16-19, Inner Ring Rd, Guindy,</span><br/>
                 <span className="indent">Chennai, 600032, India</span><br/>
                 <img
-                  src="public/images/ic_baseline-phone.png"
+                  src="/images/ic_baseline-phone.png"
                   alt="phone"
                   className="img-fluid me-1"
                 />
                 +91-1234567890 / 9087654321<br />
                 <img
-                  src="public/images/fluent_mail-20-filled.png"
+                  src="/images/fluent_mail-20-filled.png"
                   alt="mail"
                   className="img-fluid me-1"
                 />
@@ -85,121 +85,68 @@ const Footer = () => {
               </p>
             </div>
 
-            {/*  Right Section */} 
-            <div className="col-md-8">
-              <div className="row text-center text-md-start">
-                {/*  Column 1 */}
-                <div className="col-6 col-md-3 mb-3">
-                  <ul className="list-unstyled">
-                    <li>
-                    <button onClick={goToHome} className="nav-link text-white footer-text pb-3"
-                        >Home</button>
-                    </li>
-                    <li>
-                    <button onClick={goToTrainingPrograms} className="nav-link text-white footer-text pb-3"
-                        >Training Programs</button>
-                    </li>
-                    <li>
-                    <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3"
-                        >Training Partners</button>
-                    </li>
-                    <li>
-                    <button onClick={goToAboutUs} className="nav-link text-white footer-text pb-3"
-                        >About Us</button>
-                    </li>
-                    <li>
-                    <button onClick={goToContactUs} className="nav-link text-white footer-text pb-3"
-                        >Contact Us</button>
-                    </li>
-                  </ul>
-                </div>
-                {/*  Column 2 */} 
-                <div className="col-6 col-md-3 mb-3">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Software Developer</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Full Stack Developer</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Frontend Developer</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Automation Tester</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Manual Tester</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                {/*  Column 3 */} 
-                <div className="col-6 col-md-3 mb-3">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Features</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Clients</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Training & Support</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Help Center</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Contact us for Help</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                {/*  Column 4 */} 
-                <div className="col-6 col-md-3 mb-3">
-                  <ul className="list-unstyled">
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Company</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Pricing</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Meet the Team</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#" className="nav-link text-white footer-text pb-3"
-                        >Contact Us</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+        
+{/* Right Section */}
+<div className="col-md-8">
+  <div className="row text-center text-md-start">
+    {/* Column 1 */}
+    <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
+      <ul className="list-unstyled">
+        <li>
+          <button onClick={goToHome} className="nav-link text-white footer-text pb-3">
+            Home
+          </button>
+        </li>
+        <li>
+          <button onClick={goToTrainingPrograms} className="nav-link text-white footer-text pb-3">
+            Training Programs
+          </button>
+        </li>
+        <li>
+          <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3">
+            Training Partners
+          </button>
+        </li>
+        <li>
+          <button onClick={goToAboutUs} className="nav-link text-white footer-text pb-3">
+            About Us
+          </button>
+        </li>
+        <li>
+          <button onClick={goToContactUs} className="nav-link text-white footer-text pb-3">
+            Contact Us
+          </button>
+        </li>
+      </ul>
+    </div>
+    {/* Column 2 */}
+    <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
+      <ul className="list-unstyled">
+        <li>
+          <a href="#" className="nav-link text-white footer-text pb-3">
+            Full-stack Development
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link text-white footer-text pb-3">
+            Front-end Development
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link text-white footer-text pb-3">
+            Data Engineering
+          </a>
+        </li>
+        <li>
+          <a href="#" className="nav-link text-white footer-text pb-3">
+            Software Testing
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
           </div>
 
           <hr className="border-secondary" />
@@ -215,31 +162,31 @@ const Footer = () => {
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="public/images/ri_instagram-fill.png"
+                    src="/images/ri_instagram-fill.png"
                     alt="instagram"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="public/images/ic_baseline-facebook.png"
+                    src="/images/ic_baseline-facebook.png"
                     alt="facebook"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="public/images/Symbol.png"
+                    src="/images/Symbol.png"
                     alt="youtube"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="public/images/linkedin.png"
+                    src="/images/linkedin.png"
                     alt="linkedin"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="public/images/mdi_twitter.png"
+                    src="/images/mdi_twitter.png"
                     alt="twitter"
                 /></a>
               </div>

@@ -10,7 +10,7 @@ const Header = () => {
           <div className="container-fluid header-className">
             <a href="#" className="navbar-brand d-none d-lg-block pe-5">
               <img
-                src="public/images/talentron_logo.png"
+                src="/images/talentron_logo.png"
                 alt="Talentron Logo"
                 className="img-fluid desktop-logo-img"
               />
@@ -18,7 +18,7 @@ const Header = () => {
 
             <a href="#" className="navbar-brand d-block d-lg-none">
               <img
-                src="public/images/T-logo.png"
+                src="/images/T-logo.png"
                 alt="Talentron Mobile Logo"
                 className="img-fluid mobile-logo"
               />

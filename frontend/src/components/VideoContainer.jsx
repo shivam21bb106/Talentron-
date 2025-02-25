@@ -22,7 +22,7 @@ const VideoContainer = () => {
         {!isPlaying ? (
           <>
             <img
-              src="public/images/why choose our trainging.png"
+              src="/images/why choose our trainging.png"
               alt="Video Thumbnail"
             />
             <div className="play-button" onClick={playVideo}>
@@ -34,7 +34,7 @@ const VideoContainer = () => {
         ) : (
           <iframe
             id="video"
-            src="public/videos/5-second-video.mp4?autoplay=1&controls=0"
+            src="/videos/5-second-video.mp4?autoplay=1&controls=0"
             allowFullScreen
             title="Talentron Video"
           
