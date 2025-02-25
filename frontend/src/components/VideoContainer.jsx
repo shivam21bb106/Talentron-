@@ -22,7 +22,7 @@ const VideoContainer = () => {
         {!isPlaying ? (
           <>
             <img
-              src="/images/why choose our trainging.png"
+              src="/images/video_img.png"
               alt="Video Thumbnail"
             />
             <div className="play-button" onClick={playVideo}>

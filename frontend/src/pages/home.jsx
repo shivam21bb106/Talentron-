@@ -102,7 +102,7 @@ const Home = () => {
 
       <main>
      {/* job seeker - start */}
-     <FormButton/>
+     
 
      <div
   className="below-header text-white pt-2 position-relative"

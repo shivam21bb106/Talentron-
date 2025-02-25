@@ -35,14 +35,137 @@
 }
 
 .left-arrow {
-  left: 60px;
+  left: 30px;
   color: white;
 }
 
 .right-arrow {
-  right: 60px;
+  right: 30px;
   color: white;
 }
+
+@media (max-width: 1900px) {
+  .left-arrow {
+    left: 100px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 100px;
+    color: white;
+  }
+}
+@media (max-width: 1640px) {
+  .left-arrow {
+    left: 70px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 70px;
+    color: white;
+  }
+}
+@media (max-width: 1548px) {
+  .left-arrow {
+    left: 40px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 40px;
+    color: white;
+  }
+}
+@media (max-width: 1506px) {
+  .left-arrow {
+    left: 20px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 20px;
+    color: white;
+  }
+}
+@media (max-width: 1446px) {
+  .left-arrow {
+    left: 5px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 5px;
+    color: white;
+  }
+}
+@media (max-width: 1399px) {
+  .left-arrow {
+    left: 20px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 20px;
+    color: white;
+  }
+}
+@media (max-width: 1257px) {
+  .left-arrow {
+    left: 5px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 5px;
+    color: white;
+  }
+}
+@media (max-width: 1200px) {
+  .left-arrow {
+    left: 30px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 30px;
+    color: white;
+  }
+}
+@media (max-width: 1091px) {
+  .left-arrow {
+    left: 5px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 5px;
+    color: white;
+  }
+}
+@media (max-width: 991px) {
+  .left-arrow {
+    left: 40px;
+    color: white;
+  }
+  
+  .right-arrow {
+    right: 40px;
+    color: white;
+  }
+}
+@media (max-width: 480px) {
+  .slider-arrow {
+    width:30px;
+    height:30px;
+    font-size: 18px;
+  
+  }
+}
+
+
+
+
 .below-header {
   position: relative;
 }
