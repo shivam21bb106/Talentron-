@@ -958,7 +958,7 @@ const ContactUs = () => {
             <div className="top-banner">
               <i>
                 <img
-                  src="src/assets/images/contact_us/phone.png"
+                  src="public/images/phone.png"
                   className="call-us-img"
                 />
               </i>
@@ -993,7 +993,7 @@ const ContactUs = () => {
                   title={
                     <>
                       <img
-                        src="src/assets/images/trainer.png"
+                        src="public/images/trainer.png"
                         alt="jobseeker"
                         width="44"
                         height="44"
@@ -1143,7 +1143,7 @@ const ContactUs = () => {
                   title={
                     <>
                       <img
-                        src="src/assets/images/trainer.png"
+                        src="public/images/trainer.png"
                         alt="trainer"
                         width="44"
                         height="44"
@@ -1252,7 +1252,7 @@ const ContactUs = () => {
                   title={
                     <>
                       <img
-                        src="src/assets/images/employer.png"
+                        src="public/images/employer.png"
                         alt="employer"
                         width="44"
                         height="44"
@@ -1348,7 +1348,7 @@ const ContactUs = () => {
                 <div className="icon-circle-1">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/mdi_head-lightbulb.png"
+                      src="public/images/mdi_head-lightbulb.png"
                       alt="Head-lightbulb"
                       className="mb-1"
                     />
@@ -1371,7 +1371,7 @@ const ContactUs = () => {
                 <div className="icon-circle-2">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/healthicons_i-training-class.png"
+                      src="public/images/healthicons_i-training-class.png"
                       alt="training-class"
                       className="mb-1"
                     />
@@ -1393,7 +1393,7 @@ const ContactUs = () => {
                 <div className="icon-circle-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/game-icons_anvil-impact.png"
+                      src="public/images/game-icons_anvil-impact.png"
                       alt="anvil-impact"
                       className="mb-1"
                     />
@@ -1415,7 +1415,7 @@ const ContactUs = () => {
                 <div className="icon-circle-4">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/vaadin_handshake.png"
+                      src="public/images/vaadin_handshake.png"
                       alt="handshake"
                       className="mb-1"
                     />

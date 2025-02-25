@@ -4,7 +4,7 @@
 
 .training-partner-head-container {
   position: relative;
-  background: url("../assets/images/training_partner_img/head_image.png") no-repeat
+  background: url("../images/head_image.png") no-repeat
     center center/cover;
   height: 280px;
   display: flex;

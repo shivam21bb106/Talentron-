@@ -2,7 +2,7 @@
 
 .about-us-head-container {
     position: relative;
-    background: url("../assets/images/about_us_img/aboutus_head.png") no-repeat
+    background: url("../images/aboutus_head.png") no-repeat
       center center/cover;
     height: 280px;
     display: flex;
@@ -292,7 +292,7 @@ text-decoration-skip-ink: none;
 
 .our-mission-vision-container {
   position: relative;
-  background: url("../assets/images/about_us_img/Our_mission_and_Vision.png") no-repeat center center/cover;
+  background: url("../images/Our_mission_and_Vision.png") no-repeat center center/cover;
   height: auto; 
   display: flex;
   justify-content: center;

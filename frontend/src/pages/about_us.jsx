@@ -5,6 +5,7 @@ import "../styles/global.css";
 const AboutPage = () => {
   return (
     <>
+  
       <main>
         <FormButton/>
         {/* title head - start */}
@@ -12,7 +13,7 @@ const AboutPage = () => {
           <div className="dark-background">
             <div className="top-banner">
               <i>
-                <img src="src/assets/images/training_partner_img/partners.png" />
+                <img src="public/images/partners.png" />
               </i>
               <span className="banner-text-style">Who we are</span>
             </div>
@@ -41,14 +42,14 @@ const AboutPage = () => {
               <div className="welcome-to-talentron-overlay-container">
                 {/* Main Image */}
                 <img
-                  src="src/assets/images/about_us_img/welcometotalentron.png"
+                  src="public/images/welcometotalentron.png"
                   alt="Client choose us"
                   className="main-image"
                 />
 
                 {/* bottom-right Image */}
                 <img
-                  src="src/assets/images/about_us_img/solomon_journey.png"
+                  src="public/images/solomon_journey.png"
                   alt="8890 client"
                   className="overlay-bottom-right"
                 />
@@ -79,7 +80,7 @@ const AboutPage = () => {
                 {/* Image Section */}
                 <div className="founder-image-section">
                   <img
-                    src="src/assets/images/about_us_img/founder_img.png"
+                    src="public/images/founder_img.png"
                     alt="Founder Image"
                     className="img-fluid rounded founder-image"
                   />
@@ -103,7 +104,7 @@ const AboutPage = () => {
                 {/* LinkedIn Image */}
                 <div className="LinkedIn-img">
                   <img
-                    src="src/assets/images/about_us_img/linkedin_img.png"
+                    src="public/images/linkedin_img.png"
                     alt="LinkedIn Icon"
                   />
                 </div>
@@ -137,7 +138,7 @@ const AboutPage = () => {
                 <div className="icon-circle-1 mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/mdi_head-lightbulb.png"
+                      src="public/images/mdi_head-lightbulb.png"
                       alt="Head-lightbulb"
                       className="mb-1"
                     />
@@ -159,7 +160,7 @@ const AboutPage = () => {
                 <div className="icon-circle-2 mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/healthicons_i-training-class.png"
+                      src="public/images/healthicons_i-training-class.png"
                       alt="training-class"
                       className="mb-1"
                     />
@@ -178,7 +179,7 @@ const AboutPage = () => {
                 <div className="icon-circle-3 mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/game-icons_anvil-impact.png"
+                      src="public/images/game-icons_anvil-impact.png"
                       alt="anvil-impact"
                       className="mb-1"
                     />
@@ -199,7 +200,7 @@ const AboutPage = () => {
                 <div className="icon-circle-4 mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/vaadin_handshake.png"
+                      src="public/images/vaadin_handshake.png"
                       alt="handshake"
                       className="mb-1"
                     />
@@ -226,7 +227,7 @@ const AboutPage = () => {
                 <div className="mission-vision-icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/tabler_target-arrow.png"
+                      src="public/images/tabler_target-arrow.png"
                       alt="Customer_Satisfaction"
                       className="mb-1"
                     />
@@ -235,14 +236,14 @@ const AboutPage = () => {
                 <h5 className="mission-vision-title">Our Mission</h5>
                 <ul className="list-unstyled">
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
+                    <img src="public/images/white-tick.png" />{" "}
                     <span>
                       Elevate our workforce by offering comprehensive training
                       in the latest technologies and associated ecosystems.
                     </span>
                   </li>
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
+                    <img src="public/images/white-tick.png" />{" "}
                     <span>
                       Empower our team to emerge as dynamic solution providers
                       for global organizations, ensuring they are well-equipped
@@ -251,7 +252,7 @@ const AboutPage = () => {
                     </span>
                   </li>
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
+                    <img src="public/images/white-tick.png" />{" "}
                     <span>
                       Foster the development of essential soft skills and
                       decision-making abilities.
@@ -265,7 +266,7 @@ const AboutPage = () => {
                 <div className="mission-vision-icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/mdi_eye-check.png"
+                      src="public/images/mdi_eye-check.png"
                       alt="Customer_Satisfaction"
                       className="mb-1"
                     />
@@ -274,7 +275,7 @@ const AboutPage = () => {
                 <h5 className="mission-vision-title">Our Vision</h5>
                 <ul className="list-unstyled">
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
+                    <img src="public/images/white-tick.png" />{" "}
                     <span>
                       We pledge to create a positive and diverse learning
                       environment for our students that fosters continuous
@@ -283,7 +284,7 @@ const AboutPage = () => {
                     </span>
                   </li>
                   <li className="mission-vision-points mb-2">
-                    <img src="src/assets/images/about_us_img/white-tick.png" />{" "}
+                    <img src="public/images/white-tick.png" />{" "}
                     <span>
                       We are dedicated to delivering unparalleled value to our
                       customers through the highest ethical standards,
@@ -312,7 +313,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Integrity.png"
+                      src="public/images/Integrity.png"
                       alt="Integrity"
                       className="mb-1"
                     />
@@ -338,7 +339,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Transparency.png"
+                      src="public/images/Transparency.png"
                       alt="Transparency"
                       className="mb-1"
                     />
@@ -359,7 +360,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Customer_Satisfaction.png"
+                      src="public/images/Customer_Satisfaction.png"
                       alt="Customer_Satisfaction"
                       className="mb-1"
                     />
@@ -387,7 +388,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Equality.png"
+                      src="public/images/Equality.png"
                       alt="Equality"
                       className="mb-1"
                     />
@@ -413,7 +414,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Community.png"
+                      src="public/images/Community.png"
                       alt="Community"
                       className="mb-1"
                     />
@@ -439,7 +440,7 @@ const AboutPage = () => {
                 <div className="icon-circle mb-3">
                   <i>
                     <img
-                      src="src/assets/images/about_us_img/Another_values.png"
+                      src="public/images/Another_values.png"
                       alt="Another_values"
                       className="mb-2 ms-1"
                     />

@@ -2,7 +2,7 @@
 
 .training-program-head-container {
     position: relative;
-    background: url("../assets/images/training_program_img/training_program_head.png") no-repeat
+    background: url("../images/training_program_head.png") no-repeat
       center center/cover;
     height: 280px;
     display: flex;

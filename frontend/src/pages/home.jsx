@@ -23,22 +23,22 @@ const slides = [
         <div className="col-lg-6 d-none d-lg-flex image-wrapper">
           <div className="image-container">
             <div className="inner_image_overlay">
-              <img src="src/assets/images/outter_image_1.png" alt="Bottom layer Image 1" className="layer1"/>
-              <img src="src/assets/images/inner_image_1.png" alt="Image 1" className="layer2"/>
+              <img src="public/images/outter_image_1.png" alt="Bottom layer Image 1" className="layer1"/>
+              <img src="public/images/inner_image_1.png" alt="Image 1" className="layer2"/>
             </div>
             <div className="inner_image_overlay">
-              <img src="src/assets/images/outter_image_2.png" alt="Bottom layer Image 2" className="layer1"/>
-              <img src="src/assets/images/inner_image_2.png" alt="Image 2" className="layer2"/>
+              <img src="public/images/outter_image_2.png" alt="Bottom layer Image 2" className="layer1"/>
+              <img src="public/images/inner_image_2.png" alt="Image 2" className="layer2"/>
             </div>
             <div className="inner_image_overlay">
-              <img src="src/assets/images/outter_image_3.png" alt="Bottom layer Image 2" className="layer1"/>
-              <img src="src/assets/images/inner_image_3.png" alt="Image 3" className="layer2" />
+              <img src="public/images/outter_image_3.png" alt="Bottom layer Image 2" className="layer1"/>
+              <img src="public/images/inner_image_3.png" alt="Image 3" className="layer2" />
             </div>
           </div>
         </div>
       </div>
     ),
-    background: "url('src/assets/images/Rectangle-6651.png') center/cover no-repeat",
+    background: "url('public/images/Rectangle-6651.png') center/cover no-repeat",
   },
   {
     id: 2,
@@ -52,7 +52,7 @@ const slides = [
         <button className="btn btn-primary job-seeker-button">Job Seeker</button>
       </div>
     ),
-    background: "url('src/assets/images/2nd-home-image.png') center/cover no-repeat",
+    background: "url('public/images/2nd-home-image.png') center/cover no-repeat",
   },
   {
     id: 3,
@@ -70,7 +70,7 @@ const slides = [
       </div>
       
     ),
-    background: "url('src/assets/images/third-slide.png') center/cover no-repeat",
+    background: "url('public/images/third-slide.png') center/cover no-repeat",
   },
 ];
 
@@ -108,7 +108,7 @@ const Home = () => {
   className="below-header text-white pt-2 position-relative"
   style={{ 
     background: isMobile
-      ? "url('src/assets/images/Rectangle-6651.png') center/cover no-repeat"
+      ? "url('public/images/Rectangle-6651.png') center/cover no-repeat"
       : slides[currentSlide].background 
   }}
 >
@@ -123,13 +123,13 @@ const Home = () => {
     {/* Mobile Images (Different Image for Each Slide) */}
     <div className="row d-lg-none text-center mt-4 mobile-image-container">
       {currentSlide === 0 && (
-        <img src="src/assets/images/mobile_image_job_seeker.png" alt="Mobile Image 1" className="img-fluid mx-auto" />
+        <img src="public/images/mobile_image_job_seeker.png" alt="Mobile Image 1" className="img-fluid mx-auto" />
       )}
       {currentSlide === 1 && (
-        <img src="src/assets/images/mobile_image_2.png" alt="Mobile Image 2" className="img-fluid mx-auto" />
+        <img src="public/images/mobile_image_2.png" alt="Mobile Image 2" className="img-fluid mx-auto" />
       )}
       {currentSlide === 2 && (
-        <img src="src/assets/images/mobile_image_3.png" alt="Mobile Image 3" className="img-fluid mx-auto" />
+        <img src="public/images/mobile_image_3.png" alt="Mobile Image 3" className="img-fluid mx-auto" />
       )}
     </div>
   </div>
@@ -161,19 +161,19 @@ const Home = () => {
        <div className="custom-container container bg-white mb-0 mt-0">
         <div className="scrollable-row scrollable-row2 ms-2">
           <div className="card">
-            <img src="src/assets/images/full_stack.png" alt="Full Stack Icon" />
+            <img src="public/images/full_stack.png" alt="Full Stack Icon" />
             <h5 className="scrollable-text pt-1">Full Stack Development</h5>
           </div>
           <div className="card">
-            <img src="src/assets/images/data.png" alt="Data Engineering Icon" />
+            <img src="public/images/data.png" alt="Data Engineering Icon" />
             <h5 className="scrollable-text pt-1">Data Engineering</h5>
           </div>
           <div className="card">
-            <img src="src/assets/images/front_end.png" alt="Front-end Icon" />
+            <img src="public/images/front_end.png" alt="Front-end Icon" />
             <h5 className="scrollable-text pt-1">Front-end Development</h5>
           </div>
           <div className="card">
-            <img src="src/assets/images/testing.png" alt="Software Testing Icon" />
+            <img src="public/images/testing.png" alt="Software Testing Icon" />
             <h5 className="scrollable-text pt-1">Software Testing</h5>
           </div>
           <div className="card">
@@ -204,21 +204,21 @@ const Home = () => {
           <div className="why-client-overlay-container">
             {/*  Main Image */} 
             <img
-              src="src/assets/images/why client choose us.png"
+              src="public/images/why client choose us.png"
               alt="Client choose us"
               className="main-image"
             />
 
             {/*  Top-right Image Overlay */} 
             <img
-              src="src/assets/images/8890 client.png"
+              src="public/images/8890 client.png"
               alt="8890 client"
               className="overlay-top-right"
             />
 
           {/*  Bottom-right Text Overlay */} 
             <img
-              src="src/assets/images/joining.png"
+              src="public/images/joining.png"
               alt="Join"
               className="overlay-bottom-right"
             />
@@ -237,23 +237,23 @@ const Home = () => {
           </p>
           <ul className="list-unstyled">
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Hiring -
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> Hiring -
               Better Decision Making.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Measure
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> Measure
               Skill Development.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Increase
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> Increase
               Revenue Growth.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> High
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> High
               Return on Investment.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Saves
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> Saves
               Companies Productive Time.
             </li>
           </ul>
@@ -272,16 +272,16 @@ const Home = () => {
 
         <div className="process-container">
           <div className="process-step">
-            <img src="src/assets/images/talent01.png" alt="Step 1" />
+            <img src="public/images/talent01.png" alt="Step 1" />
             <p className="hiring-process-index">01</p>
             <p className="process-text">Get Hiring Plan</p>
             <p className="process-text">from Clients</p>
           </div>
 
-          <img className="arrow" src="src/assets/images/Arrow 33.png" alt="arrow" />
+          <img className="arrow" src="public/images/Arrow 33.png" alt="arrow" />
 
           <div className="process-step">
-            <img src="src/assets/images/talent02.png" alt="Step 2" />
+            <img src="public/images/talent02.png" alt="Step 2" />
             <p className="hiring-process-index">02</p>
             <p className="process-text">
               Frequent <br />
@@ -289,36 +289,36 @@ const Home = () => {
             </p>
           </div>
 
-          <img className="arrow" src="src/assets/images/Arrow 33.png" alt="arrow" />
+          <img className="arrow" src="public/images/Arrow 33.png" alt="arrow" />
 
           <div className="process-step">
-            <img src="src/assets/images/talent03.png" alt="Step 3" />
+            <img src="public/images/talent03.png" alt="Step 3" />
             <p className="hiring-process-index">03</p>
             <p className="process-text">Initial Screening &</p>
             <p className="process-text">Facilitating Interview</p>
           </div>
 
-          <img className="arrow" src="src/assets/images/Arrow 33.png" alt="arrow" />
+          <img className="arrow" src="public/images/Arrow 33.png" alt="arrow" />
 
           <div className="process-step">
-            <img src="src/assets/images/talent04.png" alt="Step 4" />
+            <img src="public/images/talent04.png" alt="Step 4" />
             <p className="hiring-process-index">04</p>
             <p className="process-text">Get Commitment</p>
             <p className="process-text">from Candidate</p>
           </div>
 
-          <img className="arrow" src="src/assets/images/Arrow 33.png" alt="arrow" />
+          <img className="arrow" src="public/images/Arrow 33.png" alt="arrow" />
 
           <div className="process-step">
-            <img src="src/assets/images/talent05.png" alt="Step 5" />
+            <img src="public/images/talent05.png" alt="Step 5" />
             <p className="hiring-process-index">05</p>
             <p className="process-text pb-3">Hire Candidate</p>
           </div>
 
-          <img className="arrow" src="src/assets/images/Arrow 33.png" alt="arrow" />
+          <img className="arrow" src="public/images/Arrow 33.png" alt="arrow" />
 
           <div className="process-step">
-            <img src="src/assets/images/talent06.png" alt="Step 6" />
+            <img src="public/images/talent06.png" alt="Step 6" />
             <p className="hiring-process-index">06</p>
             <p className="process-text">Onboarding</p>
             <p className="process-text">Process</p>
@@ -345,7 +345,7 @@ const Home = () => {
         <div className="training-container position-relative">
           <div className="training-wrapper d-flex align-items-center">
             <div className="training-process">
-              <img src="src/assets/images/training01.png" alt="Step 1" />
+              <img src="public/images/training01.png" alt="Step 1" />
               <div className="line-circle-start mt-1">
                 <div className="circle"></div>
               </div>
@@ -359,7 +359,7 @@ const Home = () => {
             </div>
 
             <div className="training-process">
-              <img src="src/assets/images/training02.png" alt="Step 2" />
+              <img src="public/images/training02.png" alt="Step 2" />
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
@@ -373,7 +373,7 @@ const Home = () => {
             </div>
 
             <div className="training-process">
-              <img src="src/assets/images/training03.png" alt="Step 3" />
+              <img src="public/images/training03.png" alt="Step 3" />
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
@@ -387,7 +387,7 @@ const Home = () => {
             </div>
 
             <div className="training-process">
-              <img src="src/assets/images/training04.png" alt="Step 4" />
+              <img src="public/images/training04.png" alt="Step 4" />
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
@@ -401,7 +401,7 @@ const Home = () => {
             </div>
 
             <div className="training-process">
-              <img src="src/assets/images/training05.png" alt="Step 5" />
+              <img src="public/images/training05.png" alt="Step 5" />
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
@@ -415,7 +415,7 @@ const Home = () => {
             </div>
 
             <div className="training-process">
-              <img src="src/assets/images/training06.png" alt="Step 6" />
+              <img src="public/images/training06.png" alt="Step 6" />
               <div className="line-circle-end mt-1">
                 <div className="circle"></div>
               </div>
@@ -455,15 +455,15 @@ const Home = () => {
           </p>
           <ul className="list-unstyled">
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+              <img src="public/images/teenyicons_tick-circle-solid.png" />
               Personalized Training Experience.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Real Time
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> Real Time
               Projects.
             </li>
             <li className="tick-mark points mb-2">
-              <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> 100%
+              <img src="public/images/teenyicons_tick-circle-solid.png" /> 100%
               Guaranteed Job.
             </li>
           </ul>
@@ -472,8 +472,8 @@ const Home = () => {
         {/*  Right Section */} 
         <div className="col-lg-6">
           <div className="why-our-training-overlay-container">
-            <img src="src/assets/images/why choose our trainging.png" alt="Laptop" />
-            <img src="src/assets/images/165+.png" alt="165+ Projects" />
+            <img src="public/images/why choose our trainging.png" alt="Laptop" />
+            <img src="public/images/165+.png" alt="165+ Projects" />
           </div>
         </div>
       </div>

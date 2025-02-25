@@ -15,7 +15,7 @@ const TrainingProgramPage = () => {
           <div className="dark-background">
             <div className="top-banner">
               <i>
-                <img src="src/assets/images/training_partner_img/partners.png" />
+                <img src="public/images/partners.png" />
               </i>
               <span className="banner-text-style">Programs</span>
             </div>
@@ -51,7 +51,7 @@ const TrainingProgramPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_program_img/hands-on-project.png"
+              src="public/images/hands-on-project.png"
               alt="Icon"
               className="ms-5 mt-3"
             />
@@ -61,7 +61,7 @@ const TrainingProgramPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_program_img/collab-with-peers.png"
+              src="public/images/collab-with-peers.png"
               alt="Icon"
               className="ms-5 mt-3"
             />
@@ -71,7 +71,7 @@ const TrainingProgramPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_program_img/experi-mentor.png"
+              src="public/images/experi-mentor.png"
               alt="Icon"
               className="ms-5 mt-3"
             />
@@ -84,9 +84,9 @@ const TrainingProgramPage = () => {
         {/*  Right Section */} 
         <div className="col-lg-6">
           <div className="career-overlay-container">
-            <img src="src/assets/images/training_program_img/person-front-computer.png" alt="person-front-computer-img" />
-            <img src="src/assets/images/training_program_img/165+ projects RT.png" className="bottomRight-img" alt="165+ RT Projects" />
-            <img src="src/assets/images/training_program_img/Real-time-exp.png" className="topRight-img" alt="RT exp" />
+            <img src="public/images/person-front-computer.png" alt="person-front-computer-img" />
+            <img src="public/images/165+ projects RT.png" className="bottomRight-img" alt="165+ RT Projects" />
+            <img src="public/images/Real-time-exp.png" className="topRight-img" alt="RT exp" />
           </div>
         </div>
       </div>
@@ -106,21 +106,21 @@ const TrainingProgramPage = () => {
           <div className="showcasing-portfolio-overlay-container">
             {/*  Main Image */} 
             <img
-              src="src/assets/images/training_program_img/showcasing_portfolio.png"
+              src="public/images/showcasing_portfolio.png"
               alt="showcasing_portfolio_img"
               className="main-image"
             />
 
             {/*  Top-right Image Overlay */} 
             <img
-              src="src/assets/images/training_program_img/resume.png"
+              src="public/images/resume.png"
               alt="resume-png"
               className="showcasing-portfolio-overlay-top-right"
             />
 
           {/*  Bottom-right Text Overlay */} 
             {/* <img
-              src="src/assets/images/joining.png"
+              src="public/images/joining.png"
               alt="Join"
               className="showcasing-portfolio-overlay-bottom-right"
             /> */}
@@ -135,22 +135,22 @@ const TrainingProgramPage = () => {
           </p>
           <ul className="list-unstyled">
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> You'll be ready to enter the job market.
+              <img src="public/images/about_us_img/white-tick.png" /> You'll be ready to enter the job market.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> Opportunities for networking.
+              <img src="public/images/about_us_img/white-tick.png" /> Opportunities for networking.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> Internships with dynamic tech startups.
+              <img src="public/images/about_us_img/white-tick.png" /> Internships with dynamic tech startups.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> Gain practical experience.
+              <img src="public/images/about_us_img/white-tick.png" /> Gain practical experience.
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> Tackle complex coding issues
+              <img src="public/images/about_us_img/white-tick.png" /> Tackle complex coding issues
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="src/assets/images/about_us_img/white-tick.png" /> Collaborate with seasoned developers.
+              <img src="public/images/about_us_img/white-tick.png" /> Collaborate with seasoned developers.
             </li>
           </ul>
           <p className="portfolio-context">
@@ -166,7 +166,7 @@ const TrainingProgramPage = () => {
     <div className="container my-4">
       <div className="custom-blue-section">
         <img
-          src="src/assets/images/training_program_img/hands-on-project.png"
+          src="public/images/hands-on-project.png"
           alt="Left Icon"
           className="ms-4"
         />
@@ -174,7 +174,7 @@ const TrainingProgramPage = () => {
         Our internships can lead to full-time positions <b>at reputable firms, offering continuous learning opportunities.</b> Over time, specialize in areas like <b>cloud computing and artificial intelligence, becoming a key player in cutting-edge projects.</b>
         </p>
         <img
-          src="src/assets/images/training_program_img/collab-with-peers.png"
+          src="public/images/collab-with-peers.png"
           alt="Right Icon"
           className="me-4"
         />

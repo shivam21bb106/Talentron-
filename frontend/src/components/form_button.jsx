@@ -4,7 +4,7 @@ import "../styles/global.css";
 const FormButton = () => {
     return (
         <a href="#" class="form-button">
-        <img src="src/assets/images/form.png" alt="Button Image"/>
+        <img src="public/images/form.png" alt="Button Image"/>
         </a>
     );
 };

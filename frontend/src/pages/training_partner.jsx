@@ -15,7 +15,7 @@ const TrainingPartnerPage = () => {
     <div className="training-partner-head-container">
       <div className="dark-background">
         <div className="top-banner">
-          <i><img src="src/assets/images/training_partner_img/partners.png" /></i>
+          <i><img src="public/images/partners.png" /></i>
           <span className="banner-text-style">Partners</span>
         </div>
         <h1 className="section-heading">Hi Training Partner!</h1>
@@ -37,42 +37,42 @@ const TrainingPartnerPage = () => {
       <div className="partner-scroll-container">
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_1.png"
+            src="public/images/partner_1.png"
             className="img-fluid"
             alt="Image 1"
           />
         </div>
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_2.png"
+            src="public/images/partner_2.png"
             className="img-fluid"
             alt="Image 2"
           />
         </div>
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_3.png"
+            src="public/images/partner_3.png"
             className="img-fluid"
             alt="Image 3"
           />
         </div>
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_4.png"
+            src="public/images/partner_4.png"
             className="img-fluid"
             alt="Image 4"
           />
         </div>
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_5.png"
+            src="public/images/partner_5.png"
             className="img-fluid"
             alt="Image 5"
           />
         </div>
         <div className="partner-image-container">
           <img
-            src="src/assets/images/training_partner_img/partner_6.png"
+            src="public/images/partner_6.png"
             className="img-fluid"
             alt="Image 6"
           />
@@ -96,21 +96,21 @@ const TrainingPartnerPage = () => {
             <div className="why-client-overlay-container">
               {/* Main Image */}
               <img
-                src="src/assets/images/training_partner_img/explore talentron.png"
+                src="public/images/explore talentron.png"
                 alt="Client choose us"
                 className="main-image"
               />
 
               {/* bottom-right Image Overlay */} 
               <img
-                src="src/assets/images/training_partner_img/900+.png"
+                src="public/images/900+.png"
                 alt="8890 client"
                 className="overlay-top-right"
               />
 
               {/* top-right Text Overlay */}
               <img
-                src="src/assets/images/joining.png"
+                src="public/images/joining.png"
                 alt="Join"
                 className="overlay-bottom-right"
               />
@@ -129,41 +129,41 @@ const TrainingPartnerPage = () => {
             <div className="points-container">
               <div className="point-row">
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  <img src="public/images/teenyicons_tick-circle-solid.png" />
                   Full-stack Development.
                 </div>
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Dev
+                  <img src="public/images/teenyicons_tick-circle-solid.png" /> Dev
                   Ops.
                 </div>
               </div>
               <div className="point-row">
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  <img src="public/images/teenyicons_tick-circle-solid.png" />
                   Front-end Development.
                 </div>
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> API
+                  <img src="public/images/teenyicons_tick-circle-solid.png" /> API
                   Development.
                 </div>
               </div>
               <div className="point-row">
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Date
+                  <img src="public/images/teenyicons_tick-circle-solid.png" /> Date
                   Engineering.
                 </div>
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  <img src="public/images/teenyicons_tick-circle-solid.png" />
                   Database Design.
                 </div>
               </div>
               <div className="point-row">
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" />
+                  <img src="public/images/teenyicons_tick-circle-solid.png" />
                   Software Testing.
                 </div>
                 <div className="point-item">
-                  <img src="src/assets/images/teenyicons_tick-circle-solid.png" /> Cloud
+                  <img src="public/images/teenyicons_tick-circle-solid.png" /> Cloud
                   Computing.
                 </div>
               </div>
@@ -184,7 +184,7 @@ const TrainingPartnerPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_partner_img/professional training.png"
+              src="public/images/professional training.png"
               alt="Icon"
               className="mb-3 ms-5 mt-3 card-body-img"
             />
@@ -194,7 +194,7 @@ const TrainingPartnerPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_partner_img/collaborate peers.png"
+              src="public/images/collaborate peers.png"
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
@@ -204,7 +204,7 @@ const TrainingPartnerPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_partner_img/continous learning.png"
+              src="public/images/continous learning.png"
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
@@ -214,7 +214,7 @@ const TrainingPartnerPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_partner_img/adaptation.png"
+              src="public/images/adaptation.png"
               alt="Icon"
               className="mb-3 ms-5 mt-3"
             />
@@ -224,7 +224,7 @@ const TrainingPartnerPage = () => {
         <div className="card">
           <div className="card-body">
             <img
-              src="src/assets/images/training_partner_img/experienced mentors.png"
+              src="public/images/experienced mentors.png"
               alt="Icon"
               className="mb-3 ms-5 mt-3 "
             />
@@ -262,7 +262,7 @@ const TrainingPartnerPage = () => {
             <div className="icon-circle mb-3">
               <i
                 ><img
-                  src="src/assets/images/training_partner_img/mdi_user-star.png"
+                  src="public/images/mdi_user-star.png"
                   alt="mdi_user-Icon"
                   className="mb-1 me-1"
               /></i>
@@ -282,7 +282,7 @@ const TrainingPartnerPage = () => {
             <div className="icon-circle mb-3">
               <i
                 ><img
-                  src="src/assets/images/training_partner_img/streamline_bag-dollar-solid.png"
+                  src="public/images/streamline_bag-dollar-solid.png"
                   alt="bag-dollar-Icon"
                   className="mb-1"
               /></i>
@@ -300,7 +300,7 @@ const TrainingPartnerPage = () => {
     <div className="container my-4">
       <div className="custom-section">
         <img
-          src="src/assets/images/training_partner_img/money-bag 2.png"
+          src="public/images/money-bag 2.png"
           alt="Left Icon"
           className="ms-4"
         />
@@ -308,7 +308,7 @@ const TrainingPartnerPage = () => {
           You have the opportunity to earn a substantial income every month.
         </p>
         <img
-          src="src/assets/images/training_partner_img/money 1.png"
+          src="public/images/money 1.png"
           alt="Right Icon"
           className="me-4"
         />

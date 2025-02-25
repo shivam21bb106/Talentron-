@@ -50,7 +50,7 @@ const Footer = () => {
             <div className="col-md-4 text-center text-md-start">
               <h4 className="fw-bold">
                 <img
-                  src="src/assets/images\Rectangle 2.png"
+                  src="public/images\Rectangle 2.png"
                   alt="square_color"
                   className="img-fluid me-1"
                 />Talentron
@@ -63,7 +63,7 @@ const Footer = () => {
               </p>
               <p className="footer-tele-email">
               <img
-                  src="src/assets/images/location.png"
+                  src="public/images/location.png"
                   alt="location"
                   className="img-fluid ms-1 me-2"
                 />
@@ -71,13 +71,13 @@ const Footer = () => {
                 <span className="indent">S.P.Plot, No. 16-19, Inner Ring Rd, Guindy,</span><br/>
                 <span className="indent">Chennai, 600032, India</span><br/>
                 <img
-                  src="src/assets/images/ic_baseline-phone.png"
+                  src="public/images/ic_baseline-phone.png"
                   alt="phone"
                   className="img-fluid me-1"
                 />
                 +91-1234567890 / 9087654321<br />
                 <img
-                  src="src/assets/images/fluent_mail-20-filled.png"
+                  src="public/images/fluent_mail-20-filled.png"
                   alt="mail"
                   className="img-fluid me-1"
                 />
@@ -215,31 +215,31 @@ const Footer = () => {
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="src/assets/images/ri_instagram-fill.png"
+                    src="public/images/ri_instagram-fill.png"
                     alt="instagram"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="src/assets/images/ic_baseline-facebook.png"
+                    src="public/images/ic_baseline-facebook.png"
                     alt="facebook"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="src/assets/images/Symbol.png"
+                    src="public/images/Symbol.png"
                     alt="youtube"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="src/assets/images/linkedin.png"
+                    src="public/images/linkedin.png"
                     alt="linkedin"
                 /></a>
                 <a href="#" className="me-2"
                   ><img
                     className="social follow"
-                    src="src/assets/images/mdi_twitter.png"
+                    src="public/images/mdi_twitter.png"
                     alt="twitter"
                 /></a>
               </div>

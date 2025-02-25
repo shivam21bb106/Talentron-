@@ -139,7 +139,7 @@ const Form2 = (props) => {
             style={{ backgroundColor: activeTab === 'trainers' ? 'white' : '' }}
             onClick={() => handleTabClick('trainers')}
             >
-            <img src='src/assets/images/trainer.png'/>
+            <img src='public/images/trainer.png'/>
               Trainers
             </div>
             <div
@@ -147,7 +147,7 @@ const Form2 = (props) => {
             style={{ backgroundColor: activeTab === 'employers' ? 'white' : '' }}
             onClick={() => handleTabClick('employers')}
             >
-            <img src='src/assets/images/employer.png'/>
+            <img src='public/images/employer.png'/>
               Employers
             </div>
           </div>

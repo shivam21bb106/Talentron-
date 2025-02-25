@@ -2,7 +2,7 @@
 
 .contact-us-head-container {
     position: relative;
-    background: url("../assets/images/contact_us/contact_us_head.png") no-repeat
+    background: url("../images/contact_us_head.png") no-repeat
       center center/cover;
     height: 280px;
     display: flex;

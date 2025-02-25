@@ -19,7 +19,7 @@ const TabView = () => {
             <div className="tabComponent-icon-circle-1">
               <i>
                 <img
-                  src="src/assets/images/training_program_img/fluent_window-dev-edit-16-filled.png"
+                  src="public/images/fluent_window-dev-edit-16-filled.png"
                   alt="Head-lightbulb"
                   className="mb-1"
                 />
@@ -44,7 +44,7 @@ const TabView = () => {
                 <div className="tabComponent-icon-circle-2">
                   <i>
                     <img
-                      src="src/assets/images/training_program_img/akar-icons_html-fill.png"
+                      src="public/images/akar-icons_html-fill.png"
                       alt="training-class"
                       className="mb-1"
                     />
@@ -69,7 +69,7 @@ const TabView = () => {
         <div className="tabComponent-icon-circle-3">
           <i>
             <img
-              src="src/assets/images/training_program_img/bxs_data.png"
+              src="public/images/bxs_data.png"
               alt="anvil-impact"
               className="mb-1"
             />
@@ -94,7 +94,7 @@ const TabView = () => {
                 <div className="tabComponent-icon-circle-4">
                   <i>
                     <img
-                      src="src/assets/images/training_program_img/grommet-icons_system.png"
+                      src="public/images/grommet-icons_system.png"
                       alt="handshake"
                       className="mb-1"
                     />
@@ -114,42 +114,42 @@ const TabView = () => {
     firstColumn: [
       {
         title: "Front-End Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "HTML5, CSS3, JavaScript",
           "Responsive web design",
           "Front-end frameworks (React / Next.js)",
         ],
-        image: "src/assets/images/training_program_img/front-end-tech.png",
+        image: "public/images/front-end-tech.png",
       },
     ],
     secondColumn: [
       {
         title: "Back-end Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Server-side programming (Node.js / Python)",
           "Database management (MySQL / PostgreSQL)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/back-end-tech.png",
+        image: "public/images/back-end-tech.png",
       },
     ],
      thirdColumn: [{
         title: "Deployment and Hosting",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Cloud platforms (AWS, Azure)",
           "Containerization (Docker)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/deploymentAndHost.png",
+        image: "public/images/deploymentAndHost.png",
       },
     ],
     lastColumn: [
       {
         title: "Engineering Tools",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Version Control (GIT)",
           "Package managers (npm, yarn)",
@@ -158,17 +158,17 @@ const TabView = () => {
       },
       {
         title: "Authentication",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["OAuth and JWT"],
       },
       {
         title: "Project Management",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
       {
         title: "Soft Skills",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
     ],
@@ -178,42 +178,42 @@ const TabView = () => {
     firstColumn: [
       {
         title: "Front-End Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "HTML5, CSS3, JavaScript",
           "Responsive web design",
           "Front-end frameworks (React / Next.js)",
         ],
-        image: "src/assets/images/training_program_img/front-end-tech.png",
+        image: "public/images/front-end-tech.png",
       },
     ],
      secondColumn: [{
         title: "Back-end Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Server-side programming (Node.js / Python)",
           "Database management (MySQL / PostgreSQL)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/back-end-tech.png",
+        image: "public/images/back-end-tech.png",
       },
     ],
     thirdColumn: [
       {
         title: "Deployment and Hosting",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Cloud platforms (AWS, Azure)",
           "Containerization (Docker)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/deploymentAndHost.png",
+        image: "public/images/deploymentAndHost.png",
       },
     ],
     lastColumn: [
       {
         title: "Engineering Tools",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Version Control (GIT)",
           "Package managers (npm, yarn)",
@@ -222,17 +222,17 @@ const TabView = () => {
       },
       {
         title: "Authentication",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["OAuth and JWT"],
       },
       {
         title: "Project Management",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
       {
         title: "Soft Skills",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
     ],
@@ -241,43 +241,43 @@ const TabView = () => {
     firstColumn: [
       {
         title: "Front-End Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "HTML5, CSS3, JavaScript",
           "Responsive web design",
           "Front-end frameworks (React / Next.js)",
         ],
-        image: "src/assets/images/training_program_img/front-end-tech.png",
+        image: "public/images/front-end-tech.png",
       },
     ],
     secondColumn: [
       {
         title: "Back-end Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Server-side programming (Node.js / Python)",
           "Database management (MySQL / PostgreSQL)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/back-end-tech.png",
+        image: "public/images/back-end-tech.png",
       },
     ],
     thirdColumn: [
       {
         title: "Deployment and Hosting",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Cloud platforms (AWS, Azure)",
           "Containerization (Docker)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/deploymentAndHost.png",
+        image: "public/images/deploymentAndHost.png",
       },
     ],
     lastColumn: [
       {
         title: "Engineering Tools",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Version Control (GIT)",
           "Package managers (npm, yarn)",
@@ -286,17 +286,17 @@ const TabView = () => {
       },
       {
         title: "Authentication",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["OAuth and JWT"],
       },
       {
         title: "Project Management",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
       {
         title: "Soft Skills",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
     ],
@@ -305,43 +305,43 @@ const TabView = () => {
     firstColumn: [
       {
         title: "Front-End Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "HTML5, CSS3, JavaScript",
           "Responsive web design",
           "Front-end frameworks (React / Next.js)",
         ],
-        image: "src/assets/images/training_program_img/front-end-tech.png",
+        image: "public/images/front-end-tech.png",
       },
     ],
     secondColumn: [
       {
         title: "Back-end Technologies",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Server-side programming (Node.js / Python)",
           "Database management (MySQL / PostgreSQL)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/back-end-tech.png",
+        image: "public/images/back-end-tech.png",
       },
     ],
     thirdColumn: [
       {
         title: "Deployment and Hosting",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Cloud platforms (AWS, Azure)",
           "Containerization (Docker)",
           "Server-side frameworks (Express.js / Django)",
         ],
-        image: "src/assets/images/training_program_img/deploymentAndHost.png",
+        image: "public/images/deploymentAndHost.png",
       },
     ],
     lastColumn: [
       {
         title: "Engineering Tools",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: [
           "Version Control (GIT)",
           "Package managers (npm, yarn)",
@@ -350,17 +350,17 @@ const TabView = () => {
       },
       {
         title: "Authentication",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["OAuth and JWT"],
       },
       {
         title: "Project Management",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
       {
         title: "Soft Skills",
-        tickMark: "src/assets/images/teenyicons_tick-circle-solid.png",
+        tickMark: "public/images/teenyicons_tick-circle-solid.png",
         items: ["Jira / Git"],
       },
     ],
