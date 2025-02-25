@@ -52,7 +52,7 @@ const Form4 = () => {
   };
 
   return (
-    <div className="boxy">
+    <div className="boxy footer-top">
       <div className="text3">
         <span>Don't Miss Out, Develop Your Coding Skills with Talentron</span>
         <p>Advance Training Session</p>

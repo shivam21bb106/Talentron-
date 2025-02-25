@@ -43,8 +43,9 @@ const Footer = () => {
     <footer>
       
       <FooterForm2 />
+
       <div className="footer-bottom bg-dark bg-gradient text-white pt-4 pb-4">
-        <div className="container">
+        <div className="container ">
           <div className="row">
              {/* Left Section */}
             <div className="col-md-4 text-center text-md-start">

@@ -170,6 +170,9 @@
 /* form button - end */
 
 /* header - start */
+.container-custom {
+  margin-inline: 6%;
+}
 
 .header-class {
   width: 1366px;
@@ -217,8 +220,12 @@
 /* header - end */
 
 /* Footer */
+.footer-top{
+  min-height: 341.5px !important;
+}
 .footer-bottom {
   position: relative;
+  min-height: 341.5px ;
 }
 .footer-background-color{
   background-color: #006CBB;

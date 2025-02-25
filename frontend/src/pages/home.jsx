@@ -456,7 +456,7 @@ const Home = () => {
           <ul className="list-unstyled">
             <li className="tick-mark points mb-2">
               <img src="/images/teenyicons_tick-circle-solid.png" />
-              Personalized Training Experience.
+              &nbsp;Personalized Training Experience.
             </li>
             <li className="tick-mark points mb-2">
               <img src="/images/teenyicons_tick-circle-solid.png" /> Real Time
