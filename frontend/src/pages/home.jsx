@@ -11,7 +11,7 @@ const slides = [
     content: (
       <div className="row align-items-center">
         {/* Left Section */}
-        <div className="col-lg-6 text-start text-lg-start">
+        <div className="col-lg-6 text-start ps-4 text-lg-start">
           <h1 className="fw-bold title-text">Hi Candidate!</h1>
           <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
           <p className="title-subtext d-none d-lg-block">
@@ -43,7 +43,7 @@ const slides = [
   {
     id: 2,
     content: (
-      <div className="col-lg-6 text-start text-lg-start">
+      <div className="col-lg-6 text-start ps-4 text-lg-start">
         <h1 className="fw-bold title-text">Hi Candidate!</h1>
         <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
         <p className="title-subtext d-none d-lg-block">
@@ -59,7 +59,7 @@ const slides = [
     content: (
       <div className="row align-items-center">
         {/* Left Section */}
-      <div className="col-lg-6 text-start text-lg-start">
+      <div className="col-lg-6 text-start ps-4 text-lg-start">
         <h1 className="fw-bold title-text">Hi Candidate!</h1>
         <h2 className="fw-bolder title-text blue-text">Are you looking for a Job?</h2>
         <p className="title-subtext d-none d-lg-block">
@@ -342,29 +342,34 @@ const Home = () => {
         <h2 className="fw-bold headline">Our Training Process</h2>
         <p className="subtitle grey-text">Professional Growth</p>
 
-        <div className="training-container position-relative">
+        <div className="training-container position-relative pt-2">
           <div className="training-wrapper d-flex align-items-center">
-            <div className="training-process">
-              <img src="/images/training01.png" alt="Step 1" />
-              <div className="line-circle-start mt-1">
-                <div className="circle"></div>
-              </div>
-              <p className="below-line-number pt-2">01</p>
-              <div className="custom-shape">1-2 Weeks</div>
-              <p className="training-process">Assess</p>
-              <p className="pb-0 training-subpoints">
-                Assess Training needs<br />Prepare Resources<br />Prepare
-                Resources
-              </p>
-            </div>
+          <div className="training-process">
+  <img src="/images/training01.png" alt="Step 1" />
+  <div className="line-circle-start mt-1">
+    <div className="circle"></div>
+  </div>
+  <p className="below-line-number pt-4">01</p>
+  <div className="rectangle-arrow">
+    <p className="mt-3 me-2">1-2 Weeks</p>
+  </div>
+  <p className="training-process">Assess</p>
+  <p className="pb-0 training-subpoints">
+    Assess Training needs<br />Prepare Resources<br />Prepare Resources
+  </p>
+</div>
+
+
 
             <div className="training-process">
               <img src="/images/training02.png" alt="Step 2" />
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
-              <p className="below-line-number pt-2">02</p>
-              <div className="custom-shape">2-3 Weeks</div>
+              <p className="below-line-number pt-4">02</p>
+              <div className="rectangle-arrow">
+              <p className="mt-3 me-2">2-3 Weeks</p>
+              </div>
               <p className="training-process">Training Readiness</p>
               <p className="pb-0 training-subpoints">
                 Candidate Screening<br />Get Commitment<br />Design Training
@@ -377,8 +382,10 @@ const Home = () => {
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
-              <p className="below-line-number pt-2">03</p>
-              <div className="custom-shape">2-3 Months</div>
+              <p className="below-line-number pt-4">03</p>
+              <div className="rectangle-arrow">
+              <p className="mt-3 me-2">2-3 Months</p>
+              </div>
               <p className="training-process">Delivery Training</p>
               <p className="pb-0 training-subpoints">
                 Intense Training<br />Facilitate Cloud Eco-System<br />Periodic
@@ -391,8 +398,10 @@ const Home = () => {
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
-              <p className="below-line-number pt-2">04</p>
-              <div className="custom-shape">1-2 Months</div>
+              <p className="below-line-number pt-4">04</p>
+              <div className="rectangle-arrow">
+              <p className="mt-3 me-2">1-2 Months</p>
+              </div>
               <p className="training-process">Real-Time Projects</p>
               <p className="pb-0 training-subpoints">
                 Provide Technical Guidance<br />Monitor Progress<br />Periodic
@@ -405,8 +414,10 @@ const Home = () => {
               <div className="line-circle mt-1">
                 <div className="circle"></div>
               </div>
-              <p className="below-line-number pt-2">05</p>
-              <div className="custom-shape">1-2 Weeks</div>
+              <p className="below-line-number pt-4">05</p>
+              <div className="rectangle-arrow">
+              <p className="mt-3 me-2">1-2 Weeks</p>
+              </div>
               <p className="training-process">VAT & Get Certified</p>
               <p className="pb-0 training-subpoints">
                 Soft Skill Training<br />Corporate Culture Training<br />Mentor
@@ -419,8 +430,10 @@ const Home = () => {
               <div className="line-circle-end mt-1">
                 <div className="circle"></div>
               </div>
-              <p className="below-line-number pt-2">06</p>
-              <div className="custom-shape">1-3 Months</div>
+              <p className="below-line-number pt-4">06</p>
+              <div className="rectangle-arrow">
+              <p className="mt-3 me-2">1-3 Months</p>
+             </div>
               <p className="training-process">Engage Partners</p>
               <p className="pb-0 training-subpoints">
                 Conduct Assessments<br />Arrange Interviews<br />Onboard

@@ -564,11 +564,17 @@
   .center-heading h5 {
     font-size: 1rem;
   }
+  .why-our-training-overlay-container img:first-child {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+  }
 
   .why-our-training-overlay-container img:last-child {
-    top: 69%;
-    left: -9%;
-    width: 30%;
+    top: 67.5%;
+    left:2.5%;
+    width: 25%;
   }
 
   /* why choose our training - end*/
@@ -793,7 +799,7 @@
     height: auto;
   }
   .why-our-training-overlay-container img:last-child {
-    top: 74%;
+    top: 72%;
     left: 4%;
     width: 20%;
   }
