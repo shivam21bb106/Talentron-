@@ -114,6 +114,7 @@
     height: 40px !important;
     min-height: 40px;
     border-radius: 50%;
+    margin-bottom: 5px;
     background-color: #006CBB;
     display: flex;
     align-items: center;
@@ -126,6 +127,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: #FF2934;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -137,6 +139,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: #FF7008;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -148,6 +151,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: #9BAA58;
+    margin-bottom: 5px;
     display: flex;
     align-items: center;
     justify-content: center;

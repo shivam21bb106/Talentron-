@@ -120,8 +120,8 @@
 .fullstack-tabView-box, .fullstack-lastColumn, .frontend-tabView-box, .frontend-lastColumn, .DataEngineering-tabView-box, .DataEngineering-lastColumn, .SoftwareTesting-tabView-box, .SoftwareTesting-lastColumn{
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Aligns content inside card to the left */
-  text-align: left; /* Ensures text remains left-aligned */
+  align-items: flex-start; 
+  text-align: left;
   width: 100%;
 }
 
@@ -405,8 +405,9 @@
   }
   .career-at-talentron-container .card-body img {
     display: block;
-    margin-left: 52px !important;
+    margin-left: 40px !important;
     margin-top: 10px !important;
+    margin-bottom: 5px ;
     width: 45px; 
     height: auto;
 }
@@ -455,7 +456,7 @@
   position: absolute;
   width: 30%;
   height: auto;
-  top: 70%;
+  top: 68.5%;
   left: 79%;
   border-radius: 4px 0px 0px 0px;
 }
@@ -476,9 +477,9 @@
 
   }
   .bottomRight-img {
-    width: 25%;
-    top: 70%;
-    left: 82%;
+    width: 26%;
+    top: 72%;
+    left: 81.5%;
   }
 }
 @media (max-width: 480px){
@@ -542,8 +543,8 @@ letter-spacing: 0%;
   position: absolute;
   width: 25%;
   height: auto;
-  top: 72%;
-  right: 3%;
+  top: 71%;
+  right: 2.5%;
 }
 
 .showcasing-portfolio-overlay-container .showcasing-portfolio-overlay-top-right {

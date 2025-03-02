@@ -1,12 +1,12 @@
 .employers-form-container {
-    width: 100%;
-    max-width: 700px;
-    margin: 20px auto;
-    padding: 25px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 25px;
+  background-color: #F6FFCB;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
   .employers-form-heading {
     font-size: 26px;
@@ -25,20 +25,50 @@
     margin: 10px auto 0;
     border-radius: 2px; 
   }
+  .form-group3 {
+    flex: 1;
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    white-space: nowrap ;
+    gap: 10px; 
+    width: 100%;
+  }
+  .form-group3.full-width {
+    flex-direction: column;
+    
+}
+.form-group3 input {
+  flex: 2 ; 
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
   .employers-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; 
+    margin: auto;
+    gap: 7px; 
   }
-  .employers-form label {
-    display: block;
+  .employers-form p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group3 label {
+    flex: 1; 
+    text-align: left;
     font-weight: bold;
-    margin-bottom: 5px;
-    color: #555;
-  }
+    white-space: nowrap; 
+}
   .employers-form input[type="text"],
   .employers-form input[type="email"],
   .employers-form textarea {
+    flex:2;
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -46,16 +76,28 @@
     box-sizing: border-box;
     font-size: 14px;
     transition: border-color 0.3s ease;
+  
   }
   .employers-form input[type="text"]:focus,
   .employers-form input[type="email"]:focus,
   .employers-form textarea:focus {
     border-color: #007bff; 
     outline: none;
+    
+ 
   }
   .requirements-textarea {
-    height: 120px;
-    resize: vertical; 
+    min-height: 120px;
+    max-height: none; /* Allow unlimited height growth */
+    resize: none;
+    overflow: visible; /* Let content dictate the scroll */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    
   }
   .employers-form button {
     padding: 12px;
@@ -88,6 +130,7 @@
   .submission-message.error {
     color: red;
   }
+  
   @media (max-width: 600px) {
     .employers-form-container {
       padding: 15px;

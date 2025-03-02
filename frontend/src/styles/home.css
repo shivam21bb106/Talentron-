@@ -20,6 +20,7 @@
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+
 .slider-arrow {
   position: absolute;
   top: 50%;
@@ -37,11 +38,13 @@
 .left-arrow {
   left: 30px;
   color: white;
+  padding-bottom: 40px !important;
 }
 
 .right-arrow {
   right: 30px;
   color: white;
+  padding-bottom: 40px !important;
 }
 @media (max-width: 1980px) {
   .left-arrow {
@@ -165,6 +168,16 @@
   }
 }
 @media (max-width: 480px) {
+  .left-arrow {
+    left: 40px;
+    color: white;
+    padding-bottom: 25px !important;
+  }
+  .right-arrow {
+    right: 40px;
+    color: white;
+    padding-bottom: 25px !important;
+  }
   .slider-arrow {
     width:30px;
     height:30px;
@@ -448,19 +461,6 @@
   padding: 0;
 }
 
-.arrow {
-  font-size: 70px;
-  width: 40px;
-  height: auto;
-  border: 5px;
-  color: #ffffff;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -75px;
-  opacity: 50%;
-}
 
 /* Talent Hiring process - end */
 

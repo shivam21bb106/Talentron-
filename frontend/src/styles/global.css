@@ -221,7 +221,7 @@
 
 /* Footer */
 .footer-top{
-  min-height: 341.5px !important;
+  min-height: 280.5px !important;
 }
 .footer-bottom {
   position: relative;
@@ -1077,13 +1077,14 @@
   display: flex !important;
   justify-content: center !important;
   width: 100%;
-  border-top: none; /* Optional: Removes the default line above the footer */
+  border-top: none;
 
 }
 .modal-title {
   color: black;
   font-weight: bold;
   text-align: center;
+  font-size: 26px !important;
   
 }
 .modal-header {

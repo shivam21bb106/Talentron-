@@ -14,24 +14,33 @@ const Footer = () => {
       window.scrollTo(0, 0); 
     }, 100);
   };
-  const goToTrainingPrograms = () => {
-    navigate("/training-program");
+  
+  const goToTrainingPrograms = (tabKey) => {
+    if (!tabKey) {
+      navigate("/training-program");
+    } else {
+      navigate("/training-program", { state: { activeTab: tabKey } });
+    }
+    
     setTimeout(() => {
       window.scrollTo(0, 0); 
     }, 100);
   };
+  
   const goToTrainingPartners = () => {
     navigate("/training-partner");
     setTimeout(() => {
       window.scrollTo(0, 0); 
     }, 100);
   };
+  
   const goToAboutUs = () => {
     navigate("/about-us");
     setTimeout(() => {
       window.scrollTo(0, 0);
     }, 100);
   };
+  
   const goToContactUs = () => {
     navigate("/contact-us");
     setTimeout(() => {
@@ -41,7 +50,6 @@ const Footer = () => {
 
   return (
     <footer>
-      
       <FooterForm2 />
 
       <div className="footer-bottom bg-dark bg-gradient text-white pt-4 pb-4">
@@ -68,7 +76,7 @@ const Footer = () => {
                   alt="location"
                   className="img-fluid ms-1 me-2"
                 />
-                Level 5, Tamarai Tech Park, <br/>
+                Level 5, Tamarai Tech Park, <br/>
                 <span className="indent">S.P.Plot, No. 16-19, Inner Ring Rd, Guindy,</span><br/>
                 <span className="indent">Chennai, 600032, India</span><br/>
                 <img
@@ -87,117 +95,86 @@ const Footer = () => {
             </div>
 
         
-{/* Right Section */}
-<div className="col-md-8">
-  <div className="row text-center text-md-start">
-    {/* Column 1 */}
-    <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
-      <ul className="list-unstyled">
-        <li>
-          <button onClick={goToHome} className="nav-link text-white footer-text pb-3">
-            Home
-          </button>
-        </li>
-        <li>
-          <button onClick={goToTrainingPrograms} className="nav-link text-white footer-text pb-3">
-            Training Program
-          </button>
-        </li>
-        <li>
-          <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3">
-            Training Partner
-          </button>
-        </li>
-        <li>
-          <button onClick={goToAboutUs} className="nav-link text-white footer-text pb-3">
-            About Us
-          </button>
-        </li>
-        <li>
-          <button onClick={goToContactUs} className="nav-link text-white footer-text pb-3">
-            Contact Us
-          </button>
-        </li>
-      </ul>
-    </div>
-    {/* Column 2 */}
-    <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
-      <ul className="list-unstyled">
-        <li>
-          <a href="#" className="nav-link text-white footer-text pb-3">
-            Full-stack Development
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white footer-text pb-3">
-            Front-end Development
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white footer-text pb-3">
-            Data Engineering
-          </a>
-        </li>
-        <li>
-          <a href="#" className="nav-link text-white footer-text pb-3">
-            Software Testing
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
+            {/* Right Section */}
+            <div className="col-md-8">
+              <div className="row text-center text-md-start">
+                {/* Column 1 */}
+                <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
+                  <ul className="list-unstyled">
+                    <li>
+                      <button onClick={goToHome} className="nav-link text-white footer-text pb-3">
+                        Home
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={() => goToTrainingPrograms()} className="nav-link text-white footer-text pb-3">
+                        Training Program
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={goToTrainingPartners} className="nav-link text-white footer-text pb-3">
+                        Training Partner
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={goToAboutUs} className="nav-link text-white footer-text pb-3">
+                        About Us
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={goToContactUs} className="nav-link text-white footer-text pb-3">
+                        Contact Us
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                {/* Column 2 */}
+                <div className="col-6 col-md-6 mb-6 d-flex flex-column justify-content-center align-items-center">
+                  <ul className="list-unstyled">
+                    <li>
+                      <button onClick={() => goToTrainingPrograms("fullstack")} className="nav-link text-white footer-text pb-3">
+                        Full-stack Development
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={() => goToTrainingPrograms("frontend")} className="nav-link text-white footer-text pb-3">
+                        Front-end Development
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={() => goToTrainingPrograms("DataEngineering")} className="nav-link text-white footer-text pb-3">
+                        Data Engineering
+                      </button>
+                    </li>
+                    <li>
+                      <button onClick={() => goToTrainingPrograms("SoftwareTesting")} className="nav-link text-white footer-text pb-3">
+                        Software Testing
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
 
           </div>
 
           <hr className="border-secondary" />
-
-         {/*  Footer Bottom Section */} 
-          <div
-            className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
-          >
-            {/*  Follow Us Section */}
+ 
+          <div className="d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start">
             <div className="d-flex align-items-center mb-3 mb-md-0">
               <h6 className="m-0 me-2 d-none d-md-block">Follow Us</h6>
               <div className="social-icons d-flex">
-                <a href="#" className="me-2"
-                  ><img
-                    className="social follow"
-                    src="/images/ri_instagram-fill.png"
-                    alt="instagram"
-                /></a>
-                <a href="#" className="me-2"
-                  ><img
-                    className="social follow"
-                    src="/images/ic_baseline-facebook.png"
-                    alt="facebook"
-                /></a>
-                <a href="#" className="me-2"
-                  ><img
-                    className="social follow"
-                    src="/images/Symbol.png"
-                    alt="youtube"
-                /></a>
-                <a href="#" className="me-2"
-                  ><img
-                    className="social follow"
-                    src="/images/linkedin.png"
-                    alt="linkedin"
-                /></a>
-                <a href="#" className="me-2"
-                  ><img
-                    className="social follow"
-                    src="/images/mdi_twitter.png"
-                    alt="twitter"
-                /></a>
+                <a href="#" className="me-2"><img className="social follow" src="/images/ri_instagram-fill.png" alt="instagram" /></a>
+                <a href="#" className="me-2"><img className="social follow" src="/images/ic_baseline-facebook.png" alt="facebook" /></a>
+                <a href="#" className="me-2"><img className="social follow" src="/images/Symbol.png" alt="youtube" /></a>
+                <a href="#" className="me-2"><img className="social follow" src="/images/linkedin.png" alt="linkedin" /></a>
+                <a href="#" className="me-2"><img className="social follow" src="/images/mdi_twitter.png" alt="twitter" /></a>
               </div>
             </div>
 
             <p className="m-0">© 2024 Talentron. All rights reserved</p>
 
-            <a href="#" className="text-decoration-none text-white"
-              >Privacy Policy</a
-            >
+            <a href="#" className="text-decoration-none text-white">Privacy Policy</a>
           </div>
         </div>
 
@@ -207,4 +184,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default Footer;
