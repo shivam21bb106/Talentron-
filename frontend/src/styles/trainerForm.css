@@ -4,21 +4,11 @@
     width: 700px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f9f9f9; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: #274860e6; 
+   
     overflow: hidden;
   }
-  .trainer-form {
-    border: 1px solid #ddd;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    border-radius: 8px;
-    background-color: #fff;
-    text-align: center;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  
-  }
+  
   .trainer-form h2 {
     margin-bottom: 15px;
     font-size: 24px;

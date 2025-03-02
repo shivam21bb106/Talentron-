@@ -3,8 +3,18 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import VideoContainer from "../components/VideoContainer";
 import FormButton from "../components/form_button";
 import "../styles/global.css";
+import { useNavigate } from "react-router-dom";
 
+const Home = () => {
 
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+  const navigate = useNavigate(); // Initialize navigate function
+  const handleJobSeekerClick = () => {
+    navigate("/contact-us", { state: { userType: "job-seeker" } }); // Navigate to the Contact page
+  };
+
+  
 const slides = [
   {
     id: 1,
@@ -17,7 +27,10 @@ const slides = [
           <p className="title-subtext d-none d-lg-block">
           Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
           </p>
-          <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+          <button className="btn btn-primary job-seeker-button" onClick={handleJobSeekerClick}>
+  Job Seeker
+</button>
+
         </div>
         {/* Right Section (Images) */}
         <div className="col-lg-6 d-none d-lg-flex image-wrapper">
@@ -49,7 +62,10 @@ const slides = [
         <p className="title-subtext d-none d-lg-block">
         Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
         </p>
-        <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+        <button className="btn btn-primary job-seeker-button" onClick={handleJobSeekerClick}>
+  Job Seeker
+</button>
+
       </div>
     ),
     background: "url('/images/2nd-home-image.png') center/cover no-repeat",
@@ -65,7 +81,10 @@ const slides = [
         <p className="title-subtext d-none d-lg-block">
         Let us guide you to your dream career with personalized training and guaranteed placement opportunities.
         </p>
-        <button className="btn btn-primary job-seeker-button">Job Seeker</button>
+        <button className="btn btn-primary job-seeker-button" onClick={handleJobSeekerClick}>
+  Job Seeker
+</button>
+
       </div>
       </div>
       
@@ -73,13 +92,7 @@ const slides = [
     background: "url('/images/third-slide.png') center/cover no-repeat",
   },
 ];
-
-
-const Home = () => {
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
-
+  
   useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth <= 1000);

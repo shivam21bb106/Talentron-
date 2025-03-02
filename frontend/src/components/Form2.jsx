@@ -243,13 +243,13 @@ const Form2 = (props) => {
                 onChange={handleInputChange}
               />
             </div>
-            <div className="form-group">
+            <div className="form-group" >
                 <label>Upload Resume*</label>
-                <input
+                <input 
                   type="file"
                   ref={fileInputRef}
                   accept=".png,.jpg,.pdf"
-                  onChange={handleFileUpload}
+                  onChange={handleFileUpload} style={{backgroundColor: 'white' }}
                 />
                 {fileError && <p className="error-message">{fileError}</p>}
               </div>
