@@ -1,68 +1,86 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import '../styles/global.css';
 import TrainersForm from './Trainer';
-import EmployersForm from './employer';
+import EmployersForm from './Employer';
+import PopupMessage from "./PopupMessage";
+
 const Form2 = (props) => {
+  const [message, setMessage] = useState("");
+  const [messageType, setMessageType] = useState("");
+
   const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    state_id: '',
-    city_id: '',
-    city2: '',
-    email: '',
-    notice_period: '',
-    expected_salary: '', 
+    name: "",
+    phone: "",
+    state_id: "",
+    city_id: "",
+    city2: "",
+    email: "",
+    notice_period: "",
+    expected_salary: "",
     upload_file: null,
   });
-  const [fileError, setFileError] = useState('');
+
+  const [showForm, setShowForm] = useState(false);
+  const [fileError, setFileError] = useState("");
   const [stateList, setStateList] = useState([]);
   const [cityList, setCityList] = useState([]);
   const [isStatesLoaded, setIsStatesLoaded] = useState(false);
-  const [activeTab, setActiveTab] = useState('jobdata');
-  const [formSubmissionMessage, setFormSubmissionMessage] = useState('');
+  const [activeTab, setActiveTab] = useState("jobdata");
   const fileInputRef = useRef(null);
-  const formEndpoint = 'https://shivam21bbbb.pythonanywhere.com/jobseekers';
+
+  const formEndpoint = "https://shivam21bbbb.pythonanywhere.com/jobseekers";
+
   const fetchStates = async () => {
     try {
-      const response = await axios.get('https://shivam21bbbb.pythonanywhere.com/statelist');
+      const response = await axios.get("https://shivam21bbbb.pythonanywhere.com/statelist");
+      console.log("State List Response:", response.data); // Debugging Line
       if (response.status === 200 && Array.isArray(response.data)) {
         setStateList(response.data);
         setIsStatesLoaded(true);
       } else {
-        console.error('Invalid state data:', response.data);
+        console.error("Invalid state data:", response.data);
       }
     } catch (error) {
-      console.error('Error fetching state list:', error);
+      console.error("Error fetching state list:", error);
     }
   };
+
   const handleStateChange = async (e) => {
     const selectedStateId = e.target.value;
-    setFormData({ ...formData, state_id: selectedStateId, city_id: '' });
+    setFormData({ ...formData, state_id: selectedStateId, city_id: "" });
+  
     if (selectedStateId) {
       try {
         const response = await axios.get(`https://shivam21bbbb.pythonanywhere.com/citylist/${selectedStateId}`);
+        console.log("City List Response:", response.data); // Debugging Line
         if (response.status === 200 && Array.isArray(response.data)) {
           setCityList(response.data);
         } else {
-          console.error('Invalid city data:', response.data);
+          console.error("Invalid city data:", response.data);
         }
       } catch (error) {
-        console.error('Error fetching city list:', error);
+        console.error("Error fetching city list:", error);
       }
     } else {
       setCityList([]);
     }
   };
+  
+  useEffect(() => {
+    fetchStates();
+  }, []);
+  
   const handleFileUpload = (e) => {
     const file = e.target.files[0];
     if (file) {
       if (file.size > 3 * 1024 * 1024) {
-        setFileError('File size must not exceed 3 MB.');
+        setFileError("File size must not exceed 3 MB.");
         setFormData({ ...formData, upload_file: null });
-        fileInputRef.current.value = '';
+        fileInputRef.current.value = "";
       } else {
-        setFileError('');
+        setFileError("");
         setFormData({ ...formData, upload_file: file });
       }
     }
@@ -72,201 +90,248 @@ const Form2 = (props) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormSubmissionMessage('');
+    setMessage(""); // Clear previous messages
+    setMessageType("");
+
     if (!formData.city_id || !formData.state_id) {
-      alert('Please enter both state and city.');
+      setMessage("Please enter both state and city.");
+      setMessageType("error");
       return;
     }
+
     const submissionData = new FormData();
     for (const key in formData) {
       submissionData.append(key, formData[key]);
     }
+
     try {
       const response = await fetch(formEndpoint, {
-        method: 'POST',
+        method: "POST",
         body: submissionData,
       });
 
       if (response.ok) {
-        console.log('Form submitted successfully');
+        setMessage("Your form is submitted successfully!");
+        setMessageType("success");
+        
+        // Reset form fields
         setFormData({
-          name: '',
-          phone: '',
-          state_id: '',
-          city_id: '',
-          city2: '',
-          email: '',
-          notice_period: '',
-          expected_salary: '', 
+          name: "",
+          phone: "",
+          state_id: "",
+          city_id: "",
+          city2: "",
+          email: "",
+          notice_period: "",
+          expected_salary: "",
           upload_file: null,
         });
-        fileInputRef.current.value = '';
-        setFormSubmissionMessage('Your form is submitted successfully!');
+        fileInputRef.current.value = "";
       } else {
-        console.log('Form submission failed');
-        setFormSubmissionMessage('Form submission failed. Please try again.');
+        setMessage("Form submission failed. Please try again.");
+        setMessageType("error");
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
-      setFormSubmissionMessage('An error occurred while submitting the form.');
+      console.error("Error submitting form:", error);
+      setMessage("An error occurred while submitting the form.");
+      setMessageType("error");
     }
   };
+
   const handleTabClick = (tab) => {
-    console.log(`Setting active tab to: ${tab}`);
     setActiveTab(tab);
   };
+  const handleClose = () => {
+    if (props.setShowForm) {
+      props.setShowForm(false);  // Close the modal
+    }
+  };
+  
+
+
   useEffect(() => {
     if (props.showForm && !isStatesLoaded) {
       fetchStates();
     }
   }, [props.showForm, isStatesLoaded]);
+
   return (
     <div className="formcontainer1711">
       {props.showForm && (
         <>
+        <button className="custom-close-button" onClick={handleClose}>×</button>
+
           <div className="job-box">
             <div
               className="seek"
-            style={{ backgroundColor: activeTab === 'jobdata' ? 'white' : '' }}
-            onClick={() => handleTabClick('jobdata')}
+              style={{
+                backgroundColor: activeTab === 'jobdata' ? 'white' : '',
+                color: activeTab === 'jobdata' ? 'blue' : 'black',
+              }}
+              onClick={() => handleTabClick('jobdata')}
             >
               Job Seekers
             </div>
             <div
               className="seek"
-            style={{ backgroundColor: activeTab === 'trainers' ? 'white' : '' }}
-            onClick={() => handleTabClick('trainers')}
+              style={{
+                backgroundColor: activeTab === 'trainers' ? 'white' : '',
+                color: activeTab === 'trainers' ? 'blue' : 'black',
+              }}
+              onClick={() => handleTabClick('trainers')}
             >
-            <img src='/images/trainer.png'/>
+              <img src="/images/trainer.png" alt="Trainer" className='form2_image' />
               Trainers
             </div>
             <div
               className="seek"
-            style={{ backgroundColor: activeTab === 'employers' ? 'white' : '' }}
-            onClick={() => handleTabClick('employers')}
+              style={{
+                backgroundColor: activeTab === 'employers' ? 'white' : '',
+                color: activeTab === 'employers' ? 'blue' : 'black',
+              }}
+              onClick={() => handleTabClick('employers')}
             >
-            <img src='/images/employer.png'/>
+              <img src="/images/employer.png" alt="Employer" className='form2_image' />
               Employers
             </div>
           </div>
-        {activeTab === 'jobdata' && (
-          <div className="job-form1">
-            <h2>Ready to Work in our company ?</h2>
-            <form className="job-form" onSubmit={handleSubmit}>
-            <div className="form-group">
-                <label>Name*</label>
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter Full Name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                />
-              </div>
-            <div className="form-group">
-                <label>Contact Number*</label>
-                <input
-                  type="text"
-                  name="phone"
-                  placeholder="Enter Phone"
-                  value={formData.phone}
-                  onChange={handleInputChange}
-                />
-              </div>
-            <div className="form-group">
-                <label>Preferred Job Location*</label>
-                <select
-                  name="state_id"
-                  value={formData.state_id}
-                  onChange={handleStateChange}
-                >
-                  <option value="">Select State</option>
-                  {stateList.map((stateItem) => (
-                    <option key={stateItem.id} value={stateItem.id}>
-                      {stateItem.new_state_name}
-                    </option>
-                  ))}
-                </select>
-                <select
-                  name="city_id"
-                  value={formData.city_id}
-                  onChange={(e) => setFormData({ ...formData, city_id: e.target.value })}
-                  disabled={!formData.state_id}
-                >
-                  <option value="">Select District</option>
-                  {cityList.map((cityItem) => (
-                    <option key={cityItem.id} value={cityItem.id}>
-                      {cityItem.new_city_name}
-                    </option>
-                  ))}
-                </select>
-              </div>
-            <div className="form-group">
-                <label>City*</label>
-                <input
-                  type="text"
-                  name="city2"
-                  placeholder="Enter City/Town/Village"
-                  value={formData.city2}
-                  onChange={handleInputChange}
-                />
-              </div>
-            <div className="form-group">
-                <label>Email*</label>
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Enter Email"
-                  value={formData.email}
-                  onChange={handleInputChange}
-                />
-              </div>
-            <div className="form-group">
-              <label>Notice Period*</label>
-              <input
-                type="text"
-                name="notice_period"
-                placeholder="Enter notice period"
-                value={formData.notice_period}
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="form-group">
-              <label>Expected Salary*</label>
-              <input
-                type="text"
-                name="expected_salary"
-                placeholder="Enter expected salary"
-                value={formData.expected_salary} 
-                onChange={handleInputChange}
-              />
-            </div>
-            <div className="form-group">
-                <label>Upload Resume*</label>
-                <input
-                  type="file"
-                  ref={fileInputRef}
-                  accept=".png,.jpg,.pdf"
-                  onChange={handleFileUpload}
-                />
-                {fileError && <p className="error-message">{fileError}</p>}
-              </div>
-            <button type="submit" className="form-submit-button">Submit</button>
-            {formSubmissionMessage && (
-              <p className="submission-message">{formSubmissionMessage}</p>
-            )}
-            </form>
+
+          {activeTab === 'jobdata' && (
+            <div className="job-form1">
+              <PopupMessage message={message} type={messageType} onClose={() => setMessage("")} />
+              <h2>Ready to Work in our company?</h2>
+              <form className="job-form" onSubmit={handleSubmit}>
+                <div className="form-group1">
+                  <label htmlFor="name">Name*</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter Full Name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+                  <label htmlFor="phone">Contact Number*</label>
+                  <input
+                    type="text"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter Phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+  <label>Preferred Job Location*</label>
+  <div className="select-container">
+    <select
+      name="state_id"
+      value={formData.state_id}
+      onChange={handleStateChange}
+    >
+      <option value="">Select State</option>
+      {stateList.length > 0 ? (
+        stateList.map((stateItem) => (
+          <option key={stateItem.id} value={stateItem.id}>
+            {stateItem.new_state_name}
+          </option>
+        ))
+      ) : (
+        <option disabled>Loading...</option>
+      )}
+    </select>
+    
+    <select
+      name="city_id"
+      value={formData.city_id}
+      onChange={(e) => setFormData({ ...formData, city_id: e.target.value })}
+      disabled={!formData.state_id || cityList.length === 0}
+    >
+      <option value="">Select District</option>
+      {cityList.length > 0 ? (
+        cityList.map((cityItem) => (
+          <option key={cityItem.id} value={cityItem.id}>
+            {cityItem.new_city_name}
+          </option>
+        ))
+      ) : (
+        <option disabled>No cities found</option>
+      )}
+    </select>
+  </div>
+</div>
+
+                <div className="form-group1">
+                  <label htmlFor="city2">City*</label>
+                  <input
+                    type="text"
+                    id="city2"
+                    name="city2"
+                    placeholder="Enter City/Town/Village"
+                    value={formData.city2}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+                  <label htmlFor="email">Email*</label>
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+                  <label htmlFor="notice_period">Notice Period*</label>
+                  <input
+                    type="text"
+                    id="notice_period"
+                    name="notice_period"
+                    placeholder="Enter notice period"
+                    value={formData.notice_period}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+                  <label htmlFor="expected_salary">Expected Salary*</label>
+                  <input
+                    type="text"
+                    id="expected_salary"
+                    name="expected_salary"
+                    placeholder="Enter expected salary"
+                    value={formData.expected_salary}
+                    onChange={handleInputChange}
+                  />
+                </div>
+                <div className="form-group1">
+  <label>Upload Resume*</label>
+  <input
+    type="file"
+    ref={fileInputRef}
+    accept=".doc,.docx,.pdf"
+    onChange={handleFileUpload}
+    className="custom-file-input"
+  />
+  {fileError && <p className="error-message">{fileError}</p>}
+</div>
+                <button type="submit" className="form-submit-button">Submit</button>
+              </form>
             </div>
           )}
-        {activeTab === 'trainers' && <TrainersForm />}
-        {activeTab === 'employers' && <EmployersForm />}
+
+          {activeTab === 'trainers' && <TrainersForm />}
+          {activeTab === 'employers' && <EmployersForm />}
         </>
       )}
     </div>
-  
   );
 };
 
-export default Form2;
+export default Form2;

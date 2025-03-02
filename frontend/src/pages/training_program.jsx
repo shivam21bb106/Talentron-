@@ -53,9 +53,9 @@ const TrainingProgramPage = () => {
             <img
               src="/images/hands-on-project.png"
               alt="Icon"
-              className="ms-5 mt-3"
+        
             />
-            <h5 className="card-title">Hands on Project</h5>
+            <h5 className="card-title me-2">Hands on Project</h5>
           </div>
         </div>
         <div className="card">
@@ -63,9 +63,9 @@ const TrainingProgramPage = () => {
             <img
               src="/images/collab-with-peers.png"
               alt="Icon"
-              className="ms-5 mt-3"
+             
             />
-            <h5 className="card-title">Collab with Peers</h5>
+            <h5 className="card-title me-2">Collab with Peers</h5>
           </div>
         </div>
         <div className="card">
@@ -73,9 +73,9 @@ const TrainingProgramPage = () => {
             <img
               src="/images/experi-mentor.png"
               alt="Icon"
-              className="ms-5 mt-3"
+            
             />
-            <h5 className="card-title">Experienced mentors</h5>
+            <h5 className="card-title me-2">Experienced mentors</h5>
           </div>
         </div>
         </div>
@@ -119,11 +119,11 @@ const TrainingProgramPage = () => {
             />
 
           {/*  Bottom-right Text Overlay */} 
-            {/* <img
-              src="/images/joining.png"
+            <img
+              src="/images/165+ projects RT.png"
               alt="Join"
               className="showcasing-portfolio-overlay-bottom-right"
-            /> */}
+            />
           </div>
         </div>
 

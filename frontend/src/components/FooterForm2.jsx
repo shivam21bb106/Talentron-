@@ -24,7 +24,7 @@ const Form4 = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!formData.name || !formData.email) {
-      setModalTitle("Error");
+      setModalTitle("ERROR");
       setModalMessage("Both fields are required.");
       setShowModal(true);
       return;
@@ -35,7 +35,7 @@ const Form4 = () => {
         email: formData.email,
       });
       if (response.status === 201) {
-        setModalTitle("Success");
+        setModalTitle("SUCCESS");
         setModalMessage("Your form has been submitted successfully!");
         setShowModal(true);
         setFormData({
@@ -45,7 +45,7 @@ const Form4 = () => {
       }
     } catch (error) {
       console.error('Error submitting the form:', error);
-      setModalTitle("Error");
+      setModalTitle("ERROR");
       setModalMessage("Failed to submit the form. Please try again.");
       setShowModal(true);
     }

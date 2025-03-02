@@ -20,8 +20,7 @@ const AboutPage = () => {
             <h1 className="section-heading">About us!</h1>
             <h1 className="Below-section-heading blue-text">Our Talentron</h1>
             <p className="section-paragraph">
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-              used in laying out print, graphic or web designs.
+            Talentron fosters tech talent through recruitment, training, leadership, innovation, integrity, transparency, and community growth.
             </p>
           </div>
         </div>
