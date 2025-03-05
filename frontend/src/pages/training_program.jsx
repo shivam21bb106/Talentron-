@@ -129,28 +129,28 @@ const TrainingProgramPage = () => {
 
         {/*  Right Section */} 
         <div className="col-lg-6">
-          <h4 className="portfolio-sideheading">Showcasing Portfolio</h4>
+          <h4 className="portfolio-sideheading" >Showcasing Portfolio</h4>
           <p className="portfolio-context">
           At Talentron, we make it possible to become a software engineer, data engineer, or software tester.
           </p>
           <ul className="list-unstyled">
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> You'll be ready to enter the job market.
+            <p className="portfolio-context"> <img src="/images/white-tick.png" /> You'll be ready to enter the job market.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> Opportunities for networking.
+            <p className="portfolio-context"> <img src="/images/white-tick.png" /> Opportunities for networking.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> Internships with dynamic tech startups.
+            <p className="portfolio-context">  <img src="/images/white-tick.png" />Internships with dynamic tech startups.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> Gain practical experience.
+            <p className="portfolio-context"> <img src="/images/white-tick.png" /> Gain practical experience.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> Tackle complex coding issues
+            <p className="portfolio-context"> <img src="/images/white-tick.png" /> Tackle complex coding issues</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-              <img src="/images/white-tick.png" /> Collaborate with seasoned developers.
+            <p className="portfolio-context">   <img src="/images/white-tick.png" /> Collaborate with seasoned developers.</p>
             </li>
           </ul>
           <p className="portfolio-context">
