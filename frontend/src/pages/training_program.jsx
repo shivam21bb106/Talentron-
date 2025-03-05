@@ -141,7 +141,7 @@ const TrainingProgramPage = () => {
             <p className="portfolio-context"> <img src="/images/white-tick.png" /> Opportunities for networking.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
-            <p className="portfolio-context">  <img src="/images/white-tick.png" />Internships with dynamic tech startups.</p>
+            <p className="portfolio-context"> <img src="/images/white-tick.png" /> Internships with dynamic tech startups.</p>
             </li>
             <li className="tick-mark portfolio-points mb-2">
             <p className="portfolio-context"> <img src="/images/white-tick.png" /> Gain practical experience.</p>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/employers.css';
 
 const EmployersForm1 = () => {
@@ -16,8 +16,18 @@ const EmployersForm1 = () => {
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
-    setErrors({ ...errors, [name]: '' }); 
-    setMessage(''); 
+
+    // Clear individual field error immediately
+    setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
+
+    // Set a timer to remove the error after 5 seconds
+    setTimeout(() => {
+      setErrors((prevErrors) => {
+        const newErrors = { ...prevErrors };
+        delete newErrors[name];
+        return newErrors;
+      });
+    }, 5000);
   };
 
   const validateForm = () => {
@@ -31,12 +41,18 @@ const EmployersForm1 = () => {
     if (!requirements.trim()) newErrors.requirements = 'Requirements are required';
 
     setErrors(newErrors);
+
+    // Remove all errors after 5 seconds
+    setTimeout(() => {
+      setErrors({});
+    }, 5000);
+
     return Object.keys(newErrors).length === 0;
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setMessage(''); 
+    setMessage('');
 
     if (!validateForm()) return;
 
@@ -50,7 +66,7 @@ const EmployersForm1 = () => {
       });
 
       if (response.ok) {
-        setMessage('Form submitted successfully!');
+        setMessage(' Form submitted successfully!');
         setFormData({
           name: '',
           email: '',
@@ -59,12 +75,17 @@ const EmployersForm1 = () => {
           requirements: '',
         });
       } else {
-        setMessage('Error submitting the form. Please try again.');
+        setMessage(' Error submitting the form. Please try again.');
       }
     } catch (error) {
       console.error('Error:', error);
-      setMessage('An error occurred while submitting the form.');
+      setMessage('⚠️ An error occurred while submitting the form.');
     }
+
+    // Remove success/error message after 5 seconds
+    setTimeout(() => {
+      setMessage('');
+    }, 5000);
   };
 
   return (
@@ -137,4 +158,4 @@ const EmployersForm1 = () => {
   );
 };
 
-export default EmployersForm1;
+export default EmployersForm1;
