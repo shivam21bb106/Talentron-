@@ -13,7 +13,17 @@ const Home = () => {
   const handleJobSeekerClick = () => {
     navigate("/contact-us", { state: { userType: "job-seeker" } }); // Navigate to the Contact page
   };
+  const goToTrainingPrograms = (tabKey) => {
+    if (!tabKey) {
+      navigate("/training-program");
+    } else {
+      navigate("/training-program", { state: { activeTab: tabKey } });
+    }
 
+    setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100);
+  };
   
 const slides = [
   {
@@ -92,6 +102,22 @@ const slides = [
     background: "url('/images/third-slide.png') center/cover no-repeat",
   },
 ];
+
+
+useEffect(() => {
+  // Function to preload images
+  const preloadImages = () => {
+    slides.forEach((slide) => {
+      const match = slide.background.match(/url\(['"]?(.*?)['"]?\)/);
+      if (match) {
+        const img = new Image();
+        img.src = match[1]; // Extracted image URL
+      }
+    });
+  };
+
+  preloadImages(); // Call preload on mount
+}, []);
   
   useEffect(() => {
     const checkScreenSize = () => {
@@ -126,7 +152,7 @@ const slides = [
   }}
 >
   {/* Left Arrow Button - Always Visible */}
-  <button className="slider-arrow left-arrow" onClick={() => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))}>
+  <button className="slider-arrow left-arrow" style={{display:'flex',justifyContent:'center',alignItems:'center'}}onClick={() => setCurrentSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1))}>
     <FaArrowLeft />
   </button>
 
@@ -148,7 +174,7 @@ const slides = [
   </div>
 
   {/* Right Arrow Button - Always Visible */}
-  <button className="slider-arrow right-arrow" onClick={() => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))}>
+  <button className="slider-arrow right-arrow" style={{display:'flex',justifyContent:'center',alignItems:'center'}} onClick={() => setCurrentSlide((prev) => (prev === slides.length - 1 ? 0 : prev + 1))}>
     <FaArrowRight />
   </button>
 
@@ -171,35 +197,33 @@ const slides = [
     ))}
   </div>
 
-       <div className="custom-container container bg-white mb-0 mt-0">
-        <div className="scrollable-row scrollable-row2 ms-2">
-          <div className="card">
-            <img src="/images/full_stack.png" alt="Full Stack Icon" />
-            <h5 className="scrollable-text pt-1">Full Stack Development</h5>
+  <div className="custom-container container bg-white mb-0 mt-0">
+      <div className="scrollable-row scrollable-row2 ms-2">
+        <button className="card" onClick={() => goToTrainingPrograms("fullstack")} style={{ cursor: "pointer" }}> 
+          <img src="/images/full_stack.png" alt="Full Stack Icon" />
+          <h5 className="scrollable-text pt-1">Full Stack Development</h5>
+        </button>
+        <button className="card" onClick={() => goToTrainingPrograms("DataEngineering")} style={{ cursor: "pointer" }}> 
+          <img src="/images/data.png" alt="Data Engineering Icon" />
+          <h5 className="scrollable-text pt-1">Data Engineering</h5>
+        </button>
+        <button className="card" onClick={() => goToTrainingPrograms("frontend")} style={{ cursor: "pointer" }}> 
+          <img src="/images/front_end.png" alt="Front-end Icon" />
+          <h5 className="scrollable-text pt-1">Front-end Development</h5>
+        </button>
+        <button className="card" onClick={() => goToTrainingPrograms("SoftwareTesting")} style={{ cursor: "pointer" }}> 
+          <img src="/images/testing.png" alt="Software Testing Icon" />
+          <h5 className="scrollable-text pt-1">Software Testing</h5>
+        </button>
+        <button className="card" onClick={() => goToTrainingPrograms("more")} style={{ cursor: "pointer" }}> 
+          <div className="circle-button">
+            <i className="bi bi-chevron-right"></i>
           </div>
-          <div className="card">
-            <img src="/images/data.png" alt="Data Engineering Icon" />
-            <h5 className="scrollable-text pt-1">Data Engineering</h5>
-          </div>
-          <div className="card">
-            <img src="/images/front_end.png" alt="Front-end Icon" />
-            <h5 className="scrollable-text pt-1">Front-end Development</h5>
-          </div>
-          <div className="card">
-            <img src="/images/testing.png" alt="Software Testing Icon" />
-            <h5 className="scrollable-text pt-1">Software Testing</h5>
-          </div>
-          <div className="card">
-            <button className="circle-button">
-              <i className="bi bi-chevron-right"></i>
-            </button>
-            <h5 className="scrollable-text pt-1">More Events</h5>
-          </div>
-        </div>
+          <h5 className="scrollable-text pt-1">More Events</h5>
+        </button>
       </div>
+    </div>
       </div>
-    
-
 
     {/*  job seeker - End */} 
 

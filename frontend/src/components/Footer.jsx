@@ -170,11 +170,12 @@ const Footer = () => {
             <div className="d-flex align-items-center mb-3 mb-md-0">
               <h6 className="m-0 me-2 d-none d-md-block">Follow Us</h6>
               <div className="social-icons d-flex">
-                <a href="#" className="me-2"><img className="social follow" src="/images/ri_instagram-fill.png" alt="instagram" /></a>
-                <a href="#" className="me-2"><img className="social follow" src="/images/ic_baseline-facebook.png" alt="facebook" /></a>
-                <a href="#" className="me-2"><img className="social follow" src="/images/Symbol.png" alt="youtube" /></a>
-                <a href="#" className="me-2"><img className="social follow" src="/images/linkedin.png" alt="linkedin" /></a>
-                <a href="#" className="me-2"><img className="social follow" src="/images/mdi_twitter.png" alt="twitter" /></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" className="me-2"><img className="social follow" src="/images/ri_instagram-fill.png" alt="instagram" /></a>
+                <a href="https://www.facebook.com/" className="me-2"><img className="social follow" src="/images/ic_baseline-facebook.png" alt="facebook" /></a>
+                <a href="https://www.youtube.com/" className="me-2"><img className="social follow" src="/images/Symbol.png" alt="youtube" /></a>
+                <a href="https://x.com/home" className="me-2"><img className="social follow" src="/images/mdi_twitter.png" alt="twitter" /></a>
+                <a href="https://www.linkedin.com/home" className="me-2"><img className="social follow" src="/images/linkedin.png" alt="linkedin" /></a>
+                
               </div>
             </div>
 

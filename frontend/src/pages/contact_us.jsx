@@ -28,9 +28,9 @@ const ContactUs = () => {
   };
 
 
-  const desktopGoogleMapsLink = "https://maps.app.goo.gl/9gehWzGgcoHsXXWq5";
+  const desktopGoogleMapsLink = "https://maps.app.goo.gl/cUxoWnS7FnDmsiuC6";
   const mobileGoogleMapsLink =
-    "geo:13.012370792090744, 80.20324905973378?q=Tamarai+Tech+Park";
+    "geo:13.061756007303863, 80.16377649544637?q=Lapis+Data+Analytics+Pvt.+Ltd.";
 
   // Check if the user is on a mobile device
   const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -92,7 +92,7 @@ const ContactUs = () => {
                     />
                   </i>
                 </div>
-                <p className="Contact-Email-subtitle">Job Seekers</p>
+                <p className="Contact-Email-subtitle" style={{marginTop:"5px"}}>Job Seekers</p>
                 <div className="d-flex align-items-center justify-content-between w-100">
                   <p className="Contact-Email-text">Job@talentron.com</p>
                   <i className="arrow-icon">&#8594;</i>
@@ -115,7 +115,7 @@ const ContactUs = () => {
                     />
                   </i>
                 </div>
-                <p className="Contact-Email-subtitle">Training Request</p>
+                <p className="Contact-Email-subtitle"  style={{marginTop:"5px"}}>Training Request</p>
                 <div className="d-flex align-items-center justify-content-between w-100">
                   <p className="Contact-Email-text">Training@talentron.com</p>
                   <i className="arrow-icon">&#8594;</i>
@@ -137,7 +137,7 @@ const ContactUs = () => {
                     />
                   </i>
                 </div>
-                <p className="Contact-Email-subtitle">Training Partner</p>
+                <p className="Contact-Email-subtitle"  style={{marginTop:"5px"}}>Training Partner</p>
                 <div className="d-flex align-items-center justify-content-between w-100">
                   <p className="Contact-Email-text">Partner@talentron.com</p>
                   <i className="arrow-icon">&#8594;</i>
@@ -159,7 +159,7 @@ const ContactUs = () => {
                     />
                   </i>
                 </div>
-                <p className="Contact-Email-subtitle">Hiring Request</p>
+                <p className="Contact-Email-subtitle"  style={{marginTop:"5px"}}>Hiring Request</p>
                 <div className="d-flex align-items-center justify-content-between w-100">
                   <p className="Contact-Email-text">hiring@talentron.com</p>
                   <i className="arrow-icon">&#8594;</i>
@@ -168,12 +168,12 @@ const ContactUs = () => {
             </div>
           </div>
           {/* Modal for Form2 */}
-      <Modal show={showForm} onHide={() => setShowForm(false)} centered dialogClassName="custom-modal-width">
+          <Modal show={showForm} onHide={() => setShowForm(false)} centered dialogClassName="custom-modal-width">
+  <Modal.Body>
+    <Form2 showForm={showForm} formType={formType} setShowForm={setShowForm} />
+  </Modal.Body>
+</Modal>
 
-        <Modal.Body>
-          <Form2 showForm={showForm} formType={formType} />
-        </Modal.Body>
-      </Modal>
         </div>
 
         {/* Email Ids - End */}
@@ -188,8 +188,8 @@ const ContactUs = () => {
             style={{ cursor: "pointer" }}
           >
             <iframe
-              title="Tamarai Tech Park"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.369057669881!2d80.20067107484209!3d13.01215418730697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526738baf4e665%3A0x379142ef5437823b!2sTamarai%20Tech%20Park!5e0!3m2!1sen!2sin!4v1738916991529!5m2!1sen!2sin"
+              title="Lapis Data Analytics Pvt. Ltd."
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.592527519292!2d80.161201574843!3d13.061588787262114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a526330665dc9e5%3A0x1ec90c82a0b8cbf8!2sLapis%20Data%20Analytics%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1740831768226!5m2!1sen!2sin" 
               width="100%"
               height="321px"
               frameBorder="0"

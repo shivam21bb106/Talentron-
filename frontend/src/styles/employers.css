@@ -30,7 +30,7 @@
   .employers-form input[type="text"],
   .employers-form input[type="email"],
   .employers-form textarea {
-    width: 100%;
+    width: 75%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
